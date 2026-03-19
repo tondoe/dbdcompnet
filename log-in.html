@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login • DBDCompNet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- NAV -->
+        <!-- NAV -->
+        <header class="site-header">
+            <div class="container nav">
+                <a class="brand" href="index.html" aria-label="DBDCompNet Home">
+                    <img class="brand-logo" src="assets/logo.png" alt="DBDCompNet logo" />
+                </a>
+
+                <!-- Desktop links -->
+                <nav class="nav-links nav-desktop" aria-label="Primary">
+                    <a href="organizations.html">Organizations</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="tournaments.html">Tournaments</a>
+                    <a href="news.html">News</a>
+                    <a href="members.html">Support</a>
+                    <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+
+                    <!-- Language (Desktop) -->
+                    <div class="lang-dropdown">
+                        <button class="lang-current" type="button" aria-haspopup="true" aria-expanded="false">
+                            EN
+                        </button>
+
+                        <div class="lang-menu" role="menu">
+                            <button type="button" data-lang="en">English</button>
+                            <button type="button" data-lang="fr">Français</button>
+                            <button type="button" data-lang="de">Deutsch</button>
+                            <button type="button" data-lang="es">Español</button>
+                            <button type="button" data-lang="pt">Português</button>
+                            <button type="button" data-lang="it">Italiano</button>
+                            <button type="button" data-lang="nl">Nederlands</button>
+                            <button type="button" data-lang="pl">Polski</button>
+                            <button type="button" data-lang="cs">Čeština</button>
+                            <button type="button" data-lang="tr">Türkçe</button>
+                            <button type="button" data-lang="ru">Русский</button>
+                            <button type="button" data-lang="uk">Українська</button>
+                            <button type="button" data-lang="sv">Svenska</button>
+                            <button type="button" data-lang="no">Norsk</button>
+                            <button type="button" data-lang="da">Dansk</button>
+                            <button type="button" data-lang="fi">Suomi</button>
+                            <button type="button" data-lang="ro">Română</button>
+                            <button type="button" data-lang="hu">Magyar</button>
+                            <button type="button" data-lang="ja">日本語</button>
+                            <button type="button" data-lang="ko">한국어</button>
+                            <button type="button" data-lang="zh">中文</button>
+                            <button type="button" data-lang="ar">العربية</button>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile hamburger -->
+                <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+                <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </label>
+
+                <!-- Mobile menu -->
+                <nav class="nav-mobile" aria-label="Mobile">
+                    <a href="organizations.html">Organizations</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="tournaments.html">Tournaments</a>
+                    <a href="news.html">News</a>
+                    <a href="members.html">Support</a>
+                    <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+
+                    <!-- Language (Mobile) -->
+                    <div class="lang-mobile">
+                        <div class="lang-mobile-title">Language</div>
+                        <button type="button" data-lang="en">English</button>
+                        <button type="button" data-lang="fr">Français</button>
+                        <button type="button" data-lang="de">Deutsch</button>
+                        <button type="button" data-lang="es">Español</button>
+                        <button type="button" data-lang="pt">Português</button>
+                        <button type="button" data-lang="it">Italiano</button>
+                        <button type="button" data-lang="nl">Nederlands</button>
+                        <button type="button" data-lang="pl">Polski</button>
+                        <button type="button" data-lang="tr">Türkçe</button>
+                        <button type="button" data-lang="ru">Русский</button>
+                        <button type="button" data-lang="uk">Українська</button>
+                        <button type="button" data-lang="ja">日本語</button>
+                        <button type="button" data-lang="ko">한국어</button>
+                        <button type="button" data-lang="zh">中文</button>
+                        <button type="button" data-lang="ar">العربية</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="site-main">
+            <section class="section auth">
+                <div class="container narrow">
+
+                    <div class="section-head">
+                        <h1 class="section-title" style="margin:0;">Log In</h1>
+                        <a class="btn btn-secondary" href="index.html">Back to Home</a>
+                    </div>
+
+                    <div class="auth-grid">
+
+                        <!-- LEFT: Form -->
+                        <div class="auth-card">
+                            <h2 class="auth-title">Welcome back</h2>
+                            <p class="auth-sub">Log in with your username or email and password.</p>
+
+                            <form class="form" action="#" method="post">
+                                <div class="field">
+                                    <label for="user">Username or Email</label>
+                                    <input class="input" id="user" name="user" type="text"
+                                        placeholder="e.g. S0771234 or email@domain.com" autocomplete="username" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="pass">Password</label>
+                                    <input class="input" id="pass" name="pass" type="password"
+                                        placeholder="Enter your password" autocomplete="current-password" />
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="check">
+                                        <input type="checkbox" name="remember" />
+                                        Keep me logged in
+                                    </label>
+
+                                    <a class="section-link" href="#" style="font-weight:800;">Forgot password?</a>
+                                </div>
+
+                                <div class="auth-actions">
+                                    <button class="btn btn-primary" type="submit">Login</button>
+                                    <a class="btn btn-secondary" href="register.html">Create Account</a>
+                                </div>
+
+                                <div class="auth-links">
+                                    <span>Logging into an organization?</span>
+                                    <a href="#">Log in to an Org →</a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- RIGHT: Big logo -->
+                        <div class="auth-side">
+                            <div class="auth-side-inner">
+                                <img class="auth-logo" src="assets/logo.png" alt="DBDCompNet logo large" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="muted" style="margin-top:14px; font-size:13px;">
+                        Note: Authentication is handled by the platform backend. This is the UI shell only.
+                    </p>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="container footer-bar">
+
+                <div class="footer-left">
+                    <div class="footer-title">© DBDCompNet & DBD Comp Union</div>
+                    <div class="footer-subcopy">2026 all rights reserved</div>
+
+                    <p class="footer-disclaimer">
+                        We are not affiliated with Behaviour Interactive or Dead by Daylight.
+                    </p>
+
+                    <div class="footer-links">
+                        <a href="legal/terms.html">Terms of Service</a>
+                        <a href="legal/privacy.html"> Privacy Policy</a>
+                        <a href="legal/imprint.html">Imprint</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <a class="social" href="https://x.com/dbdcompunion" target="_blank" aria-label="X">
+                        <img src="assets/x.png">
+                    </a>
+
+                    <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" aria-label="YouTube">
+                        <img src="assets/youtube.png">
+                    </a>
+
+                    <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" aria-label="Discord">
+                        <img src="assets/discord.png">
+                    </a>
+
+                    <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" aria-label="Twitch">
+                        <img src="assets/twitch.png">
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

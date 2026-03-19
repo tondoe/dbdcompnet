@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tournaments • DBDCompNet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- NAV -->
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+
+        <nav class="nav-links nav-desktop" aria-label="Primary">
+          <a href="organizations.html">Organizations</a>
+          <a href="teams.html">Teams</a>
+          <a href="tournaments.html">Tournaments</a>
+          <a href="news.html">News</a>
+          <a href="members.html">Support</a>
+          <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+        </nav>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-mobile" aria-label="Mobile">
+          <a href="organizations.html">Organizations</a>
+          <a href="teams.html">Teams</a>
+          <a href="tournaments.html">Tournaments</a>
+          <a href="news.html">News</a>
+          <a href="members.html">Support</a>
+          <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+
+      <!-- PAGE INTRO -->
+      <section class="section">
+        <div class="container narrow">
+          <div class="section-head">
+            <h1 class="section-title" style="margin:0;">Tournaments</h1>
+            <a class="btn btn-secondary" href="index.html">Back to Home</a>
+          </div>
+
+          <p class="muted" style="margin-top:-8px; max-width:70ch;">
+            Browse all tournaments — including past events. Completed events display the top 3 results. Brackets and
+            editing
+            will be wired up later by backend/JS.
+          </p>
+        </div>
+      </section>
+
+      <!-- TOURNAMENT LIST -->
+      <section class="section section-alt">
+        <div class="container narrow">
+
+          <div class="tour-filter">
+            <div>
+              <div class="badge red">Browse</div>
+              <p class="muted" style="margin-top:8px;">
+                Filter controls are UI-only for now (no JS).
+              </p>
+            </div>
+
+            <div class="tour-tabs" aria-label="Tournament filters">
+              <a class="tab" href="#upcoming">Upcoming</a>
+              <a class="tab" href="#live">Live</a>
+              <a class="tab" href="#completed">Completed</a>
+              <a class="tab" href="#all">All</a>
+            </div>
+          </div>
+
+          <!-- UPCOMING -->
+          <div class="section-head" id="upcoming">
+            <h2 class="section-title">Upcoming</h2>
+            <a class="section-link" href="#all">Jump to all →</a>
+          </div>
+
+          <div class="tour-list">
+            <article class="tour-item">
+              <div class="tour-top">
+                <div>
+                  <h3 class="tour-name">Tournament Name</h3>
+                  <p class="tour-meta">Hosted by Organization Name</p>
+                </div>
+                <span class="status upcoming">Upcoming</span>
+              </div>
+
+              <div class="tour-body">
+                <div class="tour-details">
+                  <span>Start: <strong>YYYY-MM-DD</strong></span>
+                  <span>End: <strong>YYYY-MM-DD</strong></span>
+                  <span>Format: <strong>BO3</strong></span>
+                  <span>Region: <strong>NA</strong></span>
+                </div>
+
+                <a class="btn btn-secondary" href="tournament.html">View</a>
+              </div>
+            </article>
+
+            <article class="tour-item">
+              <div class="tour-top">
+                <div>
+                  <h3 class="tour-name">Tournament Name</h3>
+                  <p class="tour-meta">Hosted by Organization Name</p>
+                </div>
+                <span class="status upcoming">Upcoming</span>
+              </div>
+
+              <div class="tour-body">
+                <div class="tour-details">
+                  <span>Start: <strong>YYYY-MM-DD</strong></span>
+                  <span>End: <strong>YYYY-MM-DD</strong></span>
+                  <span>Format: <strong>BO1</strong></span>
+                  <span>Region: <strong>EU</strong></span>
+                </div>
+
+                <a class="btn btn-secondary" href="tournament.html">View</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- LIVE -->
+          <div class="section-head" id="live" style="margin-top:34px;">
+            <h2 class="section-title">Live</h2>
+            <a class="section-link" href="#all">Jump to all →</a>
+          </div>
+
+          <div class="tour-list">
+            <article class="tour-item">
+              <div class="tour-top">
+                <div>
+                  <h3 class="tour-name">Tournament Name</h3>
+                  <p class="tour-meta">Hosted by Organization Name</p>
+                </div>
+                <span class="status live">Live</span>
+              </div>
+
+              <div class="tour-body">
+                <div class="tour-details">
+                  <span>Start: <strong>YYYY-MM-DD</strong></span>
+                  <span>End: <strong>YYYY-MM-DD</strong></span>
+                  <span>Format: <strong>BO3</strong></span>
+                  <span>Region: <strong>Mixed</strong></span>
+                </div>
+
+                <a class="btn btn-secondary" href="tournament.html">View</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- COMPLETED -->
+          <div class="section-head" id="completed" style="margin-top:34px;">
+            <h2 class="section-title">Completed</h2>
+            <a class="section-link" href="#all">Jump to all →</a>
+          </div>
+
+          <div class="tour-list">
+            <article class="tour-item">
+              <div class="tour-top">
+                <div>
+                  <h3 class="tour-name">Tournament Name</h3>
+                  <p class="tour-meta">Hosted by Organization Name</p>
+                </div>
+                <span class="status completed">Completed</span>
+              </div>
+
+              <div class="tour-body">
+                <div class="tour-details">
+                  <span>Start: <strong>YYYY-MM-DD</strong></span>
+                  <span>End: <strong>YYYY-MM-DD</strong></span>
+                  <span>Format: <strong>BO3</strong></span>
+                  <span>Region: <strong>NA</strong></span>
+                </div>
+
+                <a class="btn btn-secondary" href="tournament.html">View</a>
+              </div>
+
+              <div class="results">
+                <h4>Results</h4>
+                <div class="podium">
+                  <div class="podium-row">
+                    <span class="place">1st</span>
+                    <strong>Team Name</strong>
+                    <span class="muted">Winner</span>
+                  </div>
+                  <div class="podium-row">
+                    <span class="place">2nd</span>
+                    <strong>Team Name</strong>
+                    <span class="muted">Runner-up</span>
+                  </div>
+                  <div class="podium-row">
+                    <span class="place">3rd</span>
+                    <strong>Team Name</strong>
+                    <span class="muted">Top 3</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="tour-item">
+              <div class="tour-top">
+                <div>
+                  <h3 class="tour-name">Tournament Name</h3>
+                  <p class="tour-meta">Hosted by Organization Name</p>
+                </div>
+                <span class="status completed">Completed</span>
+              </div>
+
+              <div class="tour-body">
+                <div class="tour-details">
+                  <span>Start: <strong>YYYY-MM-DD</strong></span>
+                  <span>End: <strong>YYYY-MM-DD</strong></span>
+                  <span>Format: <strong>BO1</strong></span>
+                  <span>Region: <strong>EU</strong></span>
+                </div>
+
+                <a class="btn btn-secondary" href="tournament.html">View</a>
+              </div>
+
+              <div class="results">
+                <h4>Results</h4>
+                <div class="podium">
+                  <div class="podium-row">
+                    <span class="place">1st</span>
+                    <strong>Team Name</strong>
+                    <span class="muted">Winner</span>
+                  </div>
+                  <div class="podium-row">
+                    <span class="place">2nd</span>
+                    <strong>Team Name</strong>
+                    <span class="muted">Runner-up</span>
+                  </div>
+                  <div class="podium-row">
+                    <span class="place">3rd</span>
+                    <strong>Team Name</strong>
+                    <span class="muted">Top 3</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- ALL -->
+          <div class="section-head" id="all" style="margin-top:34px;">
+            <h2 class="section-title">All Tournaments</h2>
+            <a class="section-link" href="#upcoming">Back to top →</a>
+          </div>
+
+          <p class="muted" style="margin-top:-8px;">
+            This section can later be replaced with real data (admin-created tournaments, brackets, and results).
+          </p>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+
+        <div class="footer-left">
+          <div class="footer-title">© DBDCompNet & DBD Comp Union</div>
+          <div class="footer-subcopy">2026 all rights reserved</div>
+
+          <p class="footer-disclaimer">
+            We are not affiliated with Behaviour Interactive or Dead by Daylight.
+          </p>
+
+          <div class="footer-links">
+            <a href="legal/terms.html">Terms of Service</a>
+            <a href="legal/privacy.html"> Privacy Policy</a>
+            <a href="legal/imprint.html">Imprint</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="social" href="https://x.com/dbdcompunion" target="_blank" aria-label="X">
+            <img src="assets/x.png">
+          </a>
+
+          <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" aria-label="YouTube">
+            <img src="assets/youtube.png">
+          </a>
+
+          <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" aria-label="Discord">
+            <img src="assets/discord.png">
+          </a>
+
+          <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" aria-label="Twitch">
+            <img src="assets/twitch.png">
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

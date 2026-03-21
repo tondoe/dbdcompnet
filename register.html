@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Register • DBDCompNet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- NAV -->
+        <header class="site-header">
+            <div class="container nav">
+                <a class="brand" href="index.html" aria-label="DBDCompNet Home">
+                    <img class="brand-logo" src="assets/logo.png" alt="DBDCompNet logo" />
+                </a>
+
+                <nav class="nav-links nav-desktop" aria-label="Primary">
+                    <a href="organizations.html">Organizations</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="tournaments.html">Tournaments</a>
+                    <a href="news.html">News</a>
+                    <a href="members.html">Support</a>
+                    <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+                </nav>
+
+                <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+                <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </label>
+
+                <nav class="nav-mobile" aria-label="Mobile">
+                    <a href="organizations.html">Organizations</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="tournaments.html">Tournaments</a>
+                    <a href="news.html">News</a>
+                    <a href="members.html">Support</a>
+                    <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+                </nav>
+
+
+            </div>
+        </header>
+
+        <main class="site-main">
+
+            <section class="section auth">
+                <div class="container narrow">
+
+                    <div class="section-head">
+                        <h1 class="section-title" style="margin:0;">Create Account</h1>
+                        <a class="btn btn-secondary" href="index.html">Back to Home</a>
+                    </div>
+
+                    <div class="auth-split">
+
+                        <!-- LEFT: Form -->
+                        <div class="auth-card-lg">
+                            <h2 class="auth-title">Register</h2>
+                            <p class="auth-sub">
+                                Enter your details to create a DBDCompNet account. (UI only — backend handles
+                                validation)
+                            </p>
+
+                            <form class="form" action="#" method="post">
+
+                                <div class="field">
+                                    <label for="username">Display / Username</label>
+                                    <input class="input" id="username" name="username" type="text"
+                                        placeholder="Your display name" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="email">Email Address</label>
+                                    <input class="input" id="email" name="email" type="email"
+                                        placeholder="you@email.com" autocomplete="email" />
+                                </div>
+
+                                <div class="two-col">
+                                    <div class="field">
+                                        <label for="discord-user">Discord Username</label>
+                                        <input class="input" id="discord-user" name="discord_user" type="text"
+                                            placeholder="name#0000" />
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="discord-id">Discord ID</label>
+                                        <input class="input" id="discord-id" name="discord_id_last4" type="text"
+                                            placeholder="S0XX1234" maxlength="20" />
+                                        <p class="help-text">Having trouble finding your ID?
+                                            <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID"
+                                                target="_blank" rel="noopener noreferrer">
+                                                Learn more.
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="two-col">
+                                    <div class="field">
+                                        <label for="pass">Password</label>
+                                        <input class="input" id="pass" name="pass" type="password"
+                                            placeholder="Create a password" autocomplete="new-password" />
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="pass2">Confirm Password</label>
+                                        <input class="input" id="pass2" name="pass2" type="password"
+                                            placeholder="Repeat password" autocomplete="new-password" />
+                                    </div>
+                                </div>
+
+                                <!-- Terms / Privacy -->
+                                <div class="note">
+                                    Before registering, you must read and agree to the Terms of Service and Privacy
+                                    Policy. To create an organization access, contact service@dbdcompnet.com.
+                                    <div class="link-row">
+                                        <a class="link-btn" href="#tos-modal">Read Terms</a>
+                                        <a class="link-btn" href="#privacy-modal">Read Privacy</a>
+                                    </div>
+                                </div>
+
+                                <div class="form-row" style="margin-top:12px;">
+                                    <label class="check">
+                                        <input type="checkbox" name="agree_all" />
+                                        I agree to the Terms of Service and Privacy Policy
+                                    </label>
+                                </div>
+
+                                <div class="auth-actions">
+                                    <button class="btn btn-primary" type="submit">Create Account</button>
+                                    <a class="btn btn-secondary" href="log-in.html">Already have an account?</a>
+                                </div>
+
+                                <p class="muted" style="margin-top:12px; font-size:13px;">
+                                    Note: Password format and account ID generation are handled by the system after
+                                    registration.
+                                </p>
+
+                            </form>
+                        </div>
+
+                        <!-- RIGHT: Big logo / info panel -->
+                        <div class="auth-side">
+                            <div class="auth-side-inner alt">
+                                <img class="auth-logo" src="assets/logo.png" alt="DBDCompNet logo large" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="container footer-bar">
+                <div class="footer-left">
+                    <div class="footer-title">© DBDCompNet</div>
+                    <div class="footer-subcopy">2026 all rights reserved</div>
+                    <p class="footer-disclaimer">We are not affiliated with Behaviour Interactive or Dead by Daylight.
+                    </p>
+                </div>
+
+                <div class="footer-right" aria-label="Social links">
+                    <a class="social" href="#" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <img src="assets/x.png" alt="X" />
+                    </a>
+                    <a class="social" href="#" target="_blank" rel="noopener" aria-label="YouTube">
+                        <img src="assets/youtube.png" alt="YouTube" />
+                    </a>
+                    <a class="social" href="#" target="_blank" rel="noopener" aria-label="Discord">
+                        <img src="assets/discord.png" alt="Discord" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- TERMS MODAL -->
+    <div class="modal-overlay" id="tos-modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-label="Terms of Service">
+            <div class="modal-head">
+                <h3 class="modal-title">Terms of Service</h3>
+                <a class="modal-close" href="#" aria-label="Close">✕</a>
+            </div>
+
+            <div class="modal-body">
+                <div class="scrollbox">
+                    <h2 class="policy-title">Terms of Service</h2>
+                    <p class="muted">Fill in with updated ToS</p>
+
+                    <p class="muted" style="margin-top:12px;">Last updated: 2026</p>
+                </div>
+
+                <div class="modal-actions">
+                    <label class="check">
+                        <input type="checkbox" />
+                        I have read the Terms (UI only)
+                    </label>
+                    <a class="btn btn-secondary" href="#">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRIVACY MODAL -->
+    <div class="modal-overlay" id="privacy-modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-label="Privacy Policy">
+            <div class="modal-head">
+                <h3 class="modal-title">Privacy Policy</h3>
+                <a class="modal-close" href="#" aria-label="Close">✕</a>
+            </div>
+            <div class="modal-body">
+                <div class="scrollbox">
+                    <p><strong>Privacy Policy</strong></p>
+                    Welcome to the DBD Comp Union privacy policy (“Policy”). This policy exists for transparency and
+                    explains how we
+                    process your information and work to protect your privacy. Responsibility for this policy and data
+                    collection can
+                    be found in the imprint.
+                    </p>
+
+                    <h3>1. Scope and Services</h3>
+
+                    <h4>1.1 Scope of Policy</h4>
+                    <p>
+                        This applies when you (“User”) use our Services (defined below) offered by the DBD Comp Union or
+                        any
+                        of its
+                        affiliates or partners (“we”, “our”), unless an affiliate has published their own privacy
+                        policy.
+                    </p>
+                    <p>
+                        The terms of this policy together with our Terms of Service apply to your use of the Services.
+                        In
+                        certain
+                        circumstances, we may provide additional privacy-related information. This policy supplements
+                        such
+                        other notices.
+                    </p>
+
+                    <h4>1.2 Definition of Services</h4>
+                    <p>
+                        This policy gives you information on how we collect, use, process and disclose Personal Data
+                        that
+                        you provide us
+                        through the usage of our websites, applications, your DBDCompNet Account, social media channels,
+                        user support and
+                        other services provided by the DBD Comp Union (the “Services”).
+                    </p>
+
+                    <h3>2. Data Collection</h3>
+
+                    <h4>2.1 Type of Personal Data</h4>
+                    <p>We may collect, use, store and share different kinds of personal data about you, including:</p>
+                    <ul>
+                        <li><strong>Contact Data:</strong> email address.</li>
+                        <li><strong>Content Data:</strong> information stored on your device, including login
+                            information.
+                        </li>
+                        <li><strong>Employment Data:</strong> information provided for staff applications.</li>
+                        <li><strong>Identity Data:</strong> legal names, usernames or similar identifiers.</li>
+                        <li><strong>Marketing/Communication Data:</strong> your preferences for marketing and
+                            communication.
+                        </li>
+                        <li><strong>Profile Data:</strong> username, password, registered organizations, support
+                            requests.
+                        </li>
+                        <li><strong>Technical Data:</strong> IP address, general location, browser/device info,
+                            OS/platform.
+                        </li>
+                        <li><strong>Usage Data:</strong> preferences and statistics about how you use our Services.</li>
+                    </ul>
+
+                    <p>
+                        We may also collect Aggregated Data (statistical or demographic). Aggregated Data is not
+                        Personal
+                        Data because it
+                        does not directly or indirectly reveal your identity.
+                    </p>
+
+                    <p><strong>We do not collect special category data</strong> (race, religion, political beliefs,
+                        sexual
+                        orientation, health data)
+                        unless you provide express consent.
+                    </p>
+
+                    <h4>2.2 Failing to provide Personal Data</h4>
+                    <p>
+                        When we are required to collect Personal Data by law or contract and you fail to provide it, we
+                        may
+                        not be able to
+                        provide Services or features. In that case, we may cancel Services or restrict access.
+                    </p>
+
+                    <h3>3. Our Use of Your Data</h3>
+
+                    <h4>3.1 Purposes</h4>
+                    <ul>
+                        <li><strong>Performance of a contract (Art. 6(1)(b) GDPR):</strong> to operate your account,
+                            provide
+                            Services, support, and communication.</li>
+                        <li><strong>Legal obligation (Art. 6(1)(c) GDPR):</strong> to comply with law, investigations,
+                            and
+                            protect safety and rights.</li>
+                        <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> where required for certain content, features,
+                            or
+                            marketing preferences.</li>
+                        <li><strong>Legitimate interests (Art. 6(1)(f) GDPR):</strong> troubleshooting, fraud
+                            prevention,
+                            bans/suspensions, updates, testing, and security.</li>
+                    </ul>
+
+                    <h4>3.2 Opting out</h4>
+                    <p>
+                        You can ask us to stop sending marketing messages at any time. Opting out does not affect
+                        Personal
+                        Data processed
+                        for providing Services.
+                    </p>
+
+                    <h4>3.3 Changes in purpose</h4>
+                    <p>
+                        We use Personal Data only for the purposes stated in this policy. If we need to use it for
+                        another
+                        purpose, we will
+                        notify you and explain the legal basis, where required by law.
+                    </p>
+
+                    <h3>4. How Personal Data Is Collected</h3>
+
+                    <h4>4.1 Direct interactions</h4>
+                    <ul>
+                        <li>Registering for Services or creating an account</li>
+                        <li>Entering contests, events (tournaments), surveys, or creating forum content</li>
+                        <li>Contacting support, requesting help, or providing feedback</li>
+                        <li>Applying for positions at the DBD Comp Union</li>
+                    </ul>
+
+                    <h4>4.2 Data available publicly</h4>
+                    <p>
+                        If you post Personal Data in public areas (e.g., forums), it may be read or used by others. You
+                        disclose such data
+                        at your own risk.
+                    </p>
+
+                    <h4>4.3 Cookies and automated technologies</h4>
+                    <p>
+                        We use cookies and similar tools (e.g., log files, analytics/metrics tools) to operate, improve,
+                        measure usage, and
+                        secure our Services. Where required, non-essential cookies are used only with consent and can be
+                        controlled via your
+                        browser or cookie preferences.
+                    </p>
+
+                    <h4>4.4 Third parties</h4>
+                    <p>
+                        We may receive Personal Data from service providers, public sources, business partners (“Union
+                        Members”), advertising
+                        partners, or other third parties where you have agreed they may share data with us.
+                    </p>
+
+                    <h3>5. Disclosure of Personal Data</h3>
+
+                    <h4>5.1 DBD Comp Union members</h4>
+                    <p>
+                        Members of the DBD Comp Union may have access to Personal Data where necessary to provide
+                        Services,
+                        in compliance
+                        with this Policy.
+                    </p>
+
+                    <h4>5.2 External third parties</h4>
+                    <p>We do not share Personal Data with external third parties unless:</p>
+                    <ul>
+                        <li><strong>Fraud and legal:</strong> data is requested for legal reasons or to prevent
+                            harm/scams.
+                        </li>
+                        <li><strong>Law enforcement:</strong> authorities request data for law enforcement purposes.
+                        </li>
+                    </ul>
+                    <p>
+                        If someone requests your Personal Data without a valid reason under this policy, we will
+                        generally
+                        deny such
+                        requests and may contact you first where appropriate.
+                    </p>
+
+                    <h3>6. Location of Personal Data</h3>
+                    <p>
+                        Personal Data may be hosted and processed on servers operated by trusted partners (e.g., in
+                        Europe
+                        such as IONOS SE).
+                        Transfers outside the EEA/UK/Canada/US may occur and we take steps to ensure appropriate
+                        safeguards.
+                    </p>
+
+                    <h3>7. Duration of Personal Data</h3>
+                    <p>
+                        We keep Personal Data only as long as necessary to provide Services, maintain your account, and
+                        satisfy legal
+                        requirements. We may anonymize data for statistical purposes.
+                    </p>
+
+                    <h3>8. Safeguarding Personal Data</h3>
+                    <p>
+                        We use procedures and security features to protect Personal Data. If a Personal Data breach
+                        occurs,
+                        we will inform
+                        you and regulators where required by law.
+                    </p>
+
+                    <h3>9. Your Rights</h3>
+                    <ul>
+                        <li>Request access, correction, or deletion of your Personal Data</li>
+                        <li>Object to processing or request restrictions</li>
+                        <li>Request transfer (data portability)</li>
+                        <li>Withdraw consent at any time</li>
+                    </ul>
+
+                    <h3>10. About Children</h3>
+                    <p>
+                        Our Services are not intended for children/minors under local law. We do not knowingly collect
+                        Personal Data from
+                        children without guardian consent.
+                    </p>
+
+                    <h3>11. Third-Party Links</h3>
+                    <p>
+                        Our Services may include links to third-party sites. We do not control those sites and are not
+                        responsible for their
+                        privacy practices.
+                    </p>
+
+                    <h3>12. Direct Marketing</h3>
+                    <p>
+                        We send marketing communications only where permitted by law and/or with your consent. You can
+                        withdraw consent or
+                        unsubscribe at any time.
+                    </p>
+
+                    <h3>13. Changes to this Policy</h3>
+                    <p>
+                        We may update this Policy. Updates will be posted and may require acceptance to continue using
+                        the
+                        Services.
+                    </p>
+
+                    <h3>14. Contact</h3>
+                    <p>
+                        Questions or requests: <strong>support@dbdcompnet.com</strong><br>
+                        Use subject lines: <strong>X03-PRIVACY-REQUEST</strong> (for rights requests) or
+                        <strong>X01-PRIVACY-INQUIRY</strong>.
+                    </p>
+
+                    <hr class="policy-divider">
+
+                    <h3>Optional Request Template</h3>
+                    <p class="muted">You may use this template to exercise your GDPR rights (not required):</p>
+
+                    <div class="policy-template">
+                        <p><strong>Dear Support Team (Privacy Policy),</strong></p>
+                        <p>I am writing to exercise my right under the General Data Protection Regulation (GDPR).</p>
+                        <p><strong>Name / Username:</strong> ______</p>
+                        <p><strong>Email address used with our service:</strong> ______</p>
+                        <p><strong>Right(s) you wish to exercise:</strong></p>
+                        <ul>
+                            <li>Request access</li>
+                            <li>Request correction</li>
+                            <li>Request erasure</li>
+                            <li>Object to processing</li>
+                            <li>Request restriction</li>
+                            <li>Request transfer (data portability)</li>
+                            <li>Withdraw consent</li>
+                        </ul>
+                        <p><strong>Description (optional):</strong> ______</p>
+                        <p>If necessary, please let me know what information you require to verify my identity.</p>
+                        <p>Thank you for your assistance.</p>
+                        <p><strong>Kind regards,</strong><br>[Your Name]</p>
+                        <p>...</p>
+                        <p>End of Privacy Policy.</p>
+                    </div>
+
+                    <div class="modal-actions">
+                        <label class="check">
+                            <input type="checkbox" />
+                            I have read the Privacy Policy (UI only)
+                        </label>
+                        <a class="btn btn-secondary" href="#">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="container footer-bar">
+
+                <div class="footer-left">
+                    <div class="footer-title">© DBDCompNet</div>
+                    <div class="footer-subcopy">2026 all rights reserved</div>
+
+                    <p class="footer-disclaimer">
+                        We are not affiliated with Behaviour Interactive or Dead by Daylight.
+                    </p>
+
+                    <div class="footer-links">
+                        <a href="legal/terms.html">Terms of Service</a>
+                        <a href="legal/privacy.html"> Privacy Policy</a>
+                        <a href="legal/imprint.html">Imprint</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <a class="social" href="https://x.com/dbdcompunion" target="_blank" aria-label="X">
+                        <img src="assets/x.png">
+                    </a>
+
+                    <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" aria-label="YouTube">
+                        <img src="assets/youtube.png">
+                    </a>
+
+                    <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" aria-label="Discord">
+                        <img src="assets/discord.png">
+                    </a>
+
+                    <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" aria-label="Twitch">
+                        <img src="assets/twitch.png">
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+
+</body>
+
+</html>

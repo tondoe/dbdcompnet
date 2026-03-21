@@ -1,0 +1,26 @@
+dbdcompunion site is used to manage accounts (suspensions, bans and termination), manage forums (create categories, restrict access), manage organizations (shutdown sub-domain pages, suspend or ban organization accounts)
+
+organizations (home page) shows the 2 main organizations (since there is only 2 but add a 3rd slot for TBA)
+organizations (webpage) shows all active organizations linked with compunion (there is only 2 but add a 3rd for TBA)
+
+teams (home page) you click view on the team and a pop-up shows the team roster (sub roster & main roster & captains), registered organizations, team logo and tournament wins
+teams (webpage) shows all teams (same popup for home page) when you click view all teams from the homepage it takes you here and logged-in users can apply to join a team (at the top of the page) and below is all current teams in compunion
+
+news (home page) shows the 3 most recent news feed
+news (webpage) shows all news from oldest to newest
+
+tournaments (home page) shows 3 newest tournaments
+tournaments (webpage) shows all tournaments (include past events as well so the start date, end date, and results (top 3 teams of the event)
+tournament pages will also include brackets that the organizer can edit
+
+members page TBD, (not fully decided yet so dont do until it's time)
+
+(register page, login page will be basic but wait until the rest of the pages are finito)
+
+organizations cant create their own account, this is member specific
+register page will have all the details you have to input (needs last 4 digits of discord ID (ex: S000XXXX) & their email address
+register page will ALSO have popups to agree to ToS and Policy agreement, both with a (scroll to accept and not just click i agree kinda thing)
+
+login page will have the basic login via (username or email/password) option to keep me logged in/remember password or whatever) [maybe a line splitting half the page with the logo on the right]
+
+add translation for pages

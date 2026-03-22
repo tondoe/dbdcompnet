@@ -23,27 +23,82 @@
           <img class="brand-logo" src="assets/logo.png" alt="DBDCompNet logo" />
         </a>
 
+        <!-- Desktop links -->
         <nav class="nav-links nav-desktop" aria-label="Primary">
           <a href="organizations.html">Organizations</a>
           <a href="teams.html">Teams</a>
           <a href="tournaments.html">Tournaments</a>
           <a href="news.html">News</a>
-          <a href="members.html">Support</a>
-          <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+          <a href="support.html">Support</a>
+          <a href="login.html" class="btn btn-primary nav-cta">Login</a>
+
+          <!-- Language (Desktop) -->
+          <div class="lang-dropdown">
+            <button class="lang-current" type="button" aria-haspopup="true" aria-expanded="false">
+              EN
+            </button>
+
+            <div class="lang-menu" role="menu">
+              <button type="button" data-lang="en">English</button>
+              <button type="button" data-lang="fr">Français</button>
+              <button type="button" data-lang="de">Deutsch</button>
+              <button type="button" data-lang="es">Español</button>
+              <button type="button" data-lang="pt">Português</button>
+              <button type="button" data-lang="it">Italiano</button>
+              <button type="button" data-lang="nl">Nederlands</button>
+              <button type="button" data-lang="pl">Polski</button>
+              <button type="button" data-lang="cs">Čeština</button>
+              <button type="button" data-lang="tr">Türkçe</button>
+              <button type="button" data-lang="ru">Русский</button>
+              <button type="button" data-lang="uk">Українська</button>
+              <button type="button" data-lang="sv">Svenska</button>
+              <button type="button" data-lang="no">Norsk</button>
+              <button type="button" data-lang="da">Dansk</button>
+              <button type="button" data-lang="fi">Suomi</button>
+              <button type="button" data-lang="ro">Română</button>
+              <button type="button" data-lang="hu">Magyar</button>
+              <button type="button" data-lang="ja">日本語</button>
+              <button type="button" data-lang="ko">한국어</button>
+              <button type="button" data-lang="zh">中文</button>
+              <button type="button" data-lang="ar">العربية</button>
+            </div>
+          </div>
         </nav>
 
+        <!-- Mobile hamburger -->
         <input class="nav-toggle" type="checkbox" id="nav-toggle" />
         <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
           <span></span><span></span><span></span>
         </label>
 
+        <!-- Mobile menu -->
         <nav class="nav-mobile" aria-label="Mobile">
           <a href="organizations.html">Organizations</a>
           <a href="teams.html">Teams</a>
           <a href="tournaments.html">Tournaments</a>
           <a href="news.html">News</a>
-          <a href="members.html">Support</a>
-          <a href="log-in.html" class="btn btn-primary nav-cta">Login</a>
+          <a href="support.html">Support</a>
+          <a href="login.html" class="btn btn-primary nav-cta">Login</a>
+
+          <!-- Language (Mobile) -->
+          <div class="lang-mobile">
+            <div class="lang-mobile-title">Language</div>
+            <button type="button" data-lang="en">English</button>
+            <button type="button" data-lang="fr">Français</button>
+            <button type="button" data-lang="de">Deutsch</button>
+            <button type="button" data-lang="es">Español</button>
+            <button type="button" data-lang="pt">Português</button>
+            <button type="button" data-lang="it">Italiano</button>
+            <button type="button" data-lang="nl">Nederlands</button>
+            <button type="button" data-lang="pl">Polski</button>
+            <button type="button" data-lang="tr">Türkçe</button>
+            <button type="button" data-lang="ru">Русский</button>
+            <button type="button" data-lang="uk">Українська</button>
+            <button type="button" data-lang="ja">日本語</button>
+            <button type="button" data-lang="ko">한국어</button>
+            <button type="button" data-lang="zh">中文</button>
+            <button type="button" data-lang="ar">العربية</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -87,186 +142,11 @@
             <h2 class="section-title">All Teams</h2>
             <a class="section-link" href="#">Filter →</a>
           </div>
-
-          <div class="teams-grid">
-
-            <!-- TEAM CARD 1 -->
-            <article class="team-card">
-              <div class="team-top">
-                <h3 class="team-name">Team Name</h3>
-                <span class="team-tag">NA</span>
-              </div>
-              <p class="muted team-desc">Competitive roster • Active</p>
-
-              <div class="team-bottom">
-                <div class="team-stats">
-                  <span><strong>XX</strong> Players</span>
-                  <span class="dot-sep">•</span>
-                  <span><strong>XX</strong> Wins</span>
-                </div>
-                <a class="btn btn-secondary team-btn" href="#team-1">View</a>
-              </div>
-            </article>
-
-            <!-- TEAM CARD 2 -->
-            <article class="team-card">
-              <div class="team-top">
-                <h3 class="team-name">Team Name</h3>
-                <span class="team-tag">EU</span>
-              </div>
-              <p class="muted team-desc">Tournament-ready • Verified</p>
-
-              <div class="team-bottom">
-                <div class="team-stats">
-                  <span><strong>XX</strong> Players</span>
-                  <span class="dot-sep">•</span>
-                  <span><strong>XX</strong> Wins</span>
-                </div>
-                <a class="btn btn-secondary team-btn" href="#team-2">View</a>
-              </div>
-            </article>
-
-            <!-- TEAM CARD 3 -->
-            <article class="team-card">
-              <div class="team-top">
-                <h3 class="team-name">Team Name</h3>
-                <span class="team-tag">Mixed</span>
-              </div>
-              <p class="muted team-desc">Community team • Recruiting</p>
-
-              <div class="team-bottom">
-                <div class="team-stats">
-                  <span><strong>XX</strong> Players</span>
-                  <span class="dot-sep">•</span>
-                  <span><strong>XX</strong> Wins</span>
-                </div>
-                <a class="btn btn-secondary team-btn" href="#team-3">View</a>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- MODAL 1 -->
-      <section class="modal" id="team-1" aria-label="Team details">
-        <div class="modal-card" role="dialog" aria-modal="true">
-          <div class="modal-top">
-            <div>
-              <h3 class="modal-title">Team Name <span class="team-region-badge">NA</span></h3>
-              <p class="modal-sub">Tournament wins: <strong style="color:#fff;">XX</strong> • Registered orgs: <strong
-                  style="color:#fff;">XX</strong></p>
-              <div class="pill-row">
-                <span class="badge red">Captain</span>
-                <span class="badge">Main roster</span>
-                <span class="badge">Sub roster</span>
-              </div>
-            </div>
-
-            <div class="modal-top-right">
-              <div class="team-modal-logo">
-                <img src="assets/logo.png" alt="Team logo">
-              </div>
-              <a class="modal-close" href="teams.html" aria-label="Close">×</a>
-            </div>
-          </div>
-
-          <div class="modal-grid">
-            <div class="panel">
-              <h4>Main Roster</h4>
-              <div class="roster">
-                <div class="player"><strong>Player Name</strong><span>Captain</span></div>
-                <div class="player"><strong>Player Name</strong><span>Main</span></div>
-                <div class="player"><strong>Player Name</strong><span>Main</span></div>
-                <div class="player"><strong>Player Name</strong><span>Main</span></div>
-              </div>
-            </div>
-
-            <div class="panel">
-              <h4>Sub Roster</h4>
-              <div class="roster">
-                <div class="player"><strong>Player Name</strong><span>Sub</span></div>
-                <div class="player"><strong>Player Name</strong><span>Sub</span></div>
-                <div class="player"><strong>Player Name</strong><span>Sub</span></div>
-              </div>
-
-              <div style="margin-top:14px;">
-                <h4>Registered Organizations</h4>
-                <div class="org-tags">
-                  <span class="badge">DBD Comp League</span>
-                  <span class="badge">Organization Name</span>
-                  <span class="badge">TBA</span>
-                </div>
-              </div>
-
-              <div style="margin-top:14px;">
-                <h4>Team Logo</h4>
-                <p class="muted" style="margin:0;">Logo displayed here (wired later). Placeholder for now.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- MODAL 2 -->
-      <section class="modal" id="team-2" aria-label="Team details">
-        <div class="modal-card" role="dialog" aria-modal="true">
-          <div class="modal-top">
-            <div>
-              <h3 class="modal-title">Team Name <span class="team-region-badge">EU</span></h3>
-              <p class="modal-sub">Tournament wins: <strong style="color:#fff;">XX</strong> • Registered orgs: <strong
-                  style="color:#fff;">XX</strong></p>
-              <div class="pill-row">
-                <span class="badge red">Captain</span>
-                <span class="badge">Main roster</span>
-                <span class="badge">Sub roster</span>
-              </div>
-            </div>
-
-            <div class="modal-top-right">
-              <div class="team-modal-logo">
-                <img src="assets/logo.png" alt="Team logo">
-              </div>
-              <a class="modal-close" href="teams.html" aria-label="Close">×</a>
-            </div>
-          </div>
-
-          <div class="modal-grid">
-            <div class="panel">
-              <h4>Main Roster</h4>
-              <div class="roster">
-                <div class="player"><strong>Player Name</strong><span>Captain</span></div>
-                <div class="player"><strong>Player Name</strong><span>Main</span></div>
-                <div class="player"><strong>Player Name</strong><span>Main</span></div>
-                <div class="player"><strong>Player Name</strong><span>Main</span></div>
-              </div>
-            </div>
-
-            <div class="panel">
-              <h4>Sub Roster</h4>
-              <div class="roster">
-                <div class="player"><strong>Player Name</strong><span>Sub</span></div>
-                <div class="player"><strong>Player Name</strong><span>Sub</span></div>
-                <div class="player"><strong>Player Name</strong><span>Sub</span></div>
-              </div>
-
-              <div style="margin-top:14px;">
-                <h4>Registered Organizations</h4>
-                <div class="org-tags">
-                  <span class="badge">DBD Comp League</span>
-                  <span class="badge">Organization Name</span>
-                  <span class="badge">TBA</span>
-                </div>
-              </div>
-
-              <div style="margin-top:14px;">
-                <h4>Team Logo</h4>
-                <p class="muted" style="margin:0;">Logo displayed here (wired later). Placeholder for now.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+ 
+          <div class="teams-empty">
+  <p class="empty-title">No teams yet</p>
+  <p class="empty-sub">Currently no registered teams.</p>
+</div>
 
       <!-- MODAL 3 -->
       <section class="modal" id="team-3" aria-label="Team details">
@@ -287,7 +167,7 @@
               <div class="team-modal-logo">
                 <img src="assets/logo.png" alt="Team logo">
               </div>
-              <a class="modal-close" href="teams.html" aria-label="Close">×</a>
+              <a class="modal-close" href="#" aria-label="Close">×</a>
             </div>
           </div>
 
@@ -344,9 +224,9 @@
           </p>
 
           <div class="footer-links">
-            <a href="legal/terms.html">Terms of Service</a>
-            <a href="legal/privacy.html">Privacy Policy</a>
-            <a href="legal/imprint.html">Imprint</a>
+            <a href="support/legal/terms.html">Terms of Service</a>
+            <a href="support/legal/privacy.html">Privacy Policy</a>
+            <a href="support/legal/legal-notice.html">Legal Notice</a>
           </div>
         </div>
 
@@ -371,6 +251,8 @@
 
       </div>
     </footer>
+
+
 
   </div>
 </body>

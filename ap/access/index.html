@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Access &bull; Admin-Panel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+
+        <nav class="nav-links nav-desktop" aria-label="Admin Panel">
+          <a href="../access/">Access</a>
+          <a href="../teams/">Teams</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../../support/">Support</a>
+          <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-mobile" aria-label="Admin Panel Mobile">
+          <a href="../access/">Access</a>
+          <a href="../teams/">Teams</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../../support/">Support</a>
+          <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow ap-shell">
+          <div>
+            <p class="ap-kicker">Organization Panel</p>
+            <div class="section-head">
+              <h1 class="section-title" style="margin:0;">Access</h1>
+              <a class="btn btn-secondary" href="../">Back to Admin-Panel</a>
+            </div>
+            <p class="muted" style="margin-top:-8px; max-width:78ch;">Access is the menu for organizations to manage permissions. Staff members with <strong style="color:#fff;">admin.perms</strong> can search for users and assign or remove organization-side permissions.</p>
+          </div>
+
+          <div class="ap-card">
+            <div class="ap-toolbar">
+              <div>
+                <h2>User Search</h2>
+                <p class="muted" style="margin:8px 0 0;">Search for a user and open their organization permission profile.</p>
+              </div>
+              <div class="ap-search">
+                <input class="ap-input" type="text" value="DemoUser1" aria-label="Search user">
+                <a class="btn btn-primary" href="#staff-user">Search</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ap-split">
+            <div class="ap-stack">
+              <div class="ap-card">
+                <div class="ap-toolbar">
+                  <div>
+                    <h3>Assigned Staff</h3>
+                    <p class="muted" style="margin:8px 0 0;">Only organization-authorized users should appear here.</p>
+                  </div>
+                  <span class="badge red">admin.perms required</span>
+                </div>
+
+                <div class="ap-list" style="margin-top:18px;">
+                  <div class="ap-list-item">
+                    <div>
+                      <h4>Jamie Pefestorff</h4>
+                      <p class="muted">Organization account owner with full AP control.</p>
+                    </div>
+                    <div class="ap-actions">
+                      <span class="badge">Owner</span>
+                      <a class="btn btn-secondary" href="#staff-user">Manage</a>
+                    </div>
+                  </div>
+
+                  <div class="ap-list-item">
+                    <div>
+                      <h4>DemoUser1</h4>
+                      <p class="muted">Staff member with tournament and page moderation permissions.</p>
+                    </div>
+                    <div class="ap-actions">
+                      <span class="badge">Staff</span>
+                      <a class="btn btn-secondary" href="#staff-user">Manage</a>
+                    </div>
+                  </div>
+
+                  <div class="ap-list-item">
+                    <div>
+                      <h4>DemoUser2</h4>
+                      <p class="muted">Reviewing applications and team moderation only.</p>
+                    </div>
+                    <div class="ap-actions">
+                      <span class="badge">Limited</span>
+                      <a class="btn btn-secondary" href="#staff-user">Manage</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ap-card ap-danger">
+                <h3>Permission Rule</h3>
+                <p class="muted" style="margin-bottom:0;">Permissions can only be given with the organization account or when the acting staff member has <strong style="color:#fff;">admin.perms</strong>.</p>
+              </div>
+            </div>
+
+            <div class="ap-stack">
+              <div class="ap-card">
+                <h3>Available Permissions</h3>
+                <ol class="ap-permission-list">
+                  <li>admin.perms</li>
+                  <li>team.approve</li>
+                  <li>team.deny</li>
+                  <li>team.suspend</li>
+                  <li>team.suspend.revoke</li>
+                  <li>user.suspend</li>
+                  <li>user.suspend.revoke</li>
+                  <li>event.create</li>
+                  <li>event.edit</li>
+                  <li>event.delete</li>
+                  <li>page.access.admin</li>
+                </ol>
+              </div>
+
+              <div class="ap-note">
+                News management in the Admin-Panel should require <strong style="color:#fff;">page.access.admin</strong> on top of organization access.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="modal" id="staff-user" aria-label="User permissions">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-top">
+            <div>
+              <h3 class="modal-title">DemoUser1 <span class="team-region-badge">Access Profile</span></h3>
+              <p class="modal-sub">Enable or disable permissions for a staff member in this organization workspace.</p>
+            </div>
+            <a class="modal-close" href="#" aria-label="Close">&times;</a>
+          </div>
+
+          <div class="modal-grid">
+            <div class="panel">
+              <h4>Permission Set</h4>
+              <div class="ap-list">
+                <div class="ap-list-item"><strong>admin.perms</strong><span class="badge red">Enabled</span></div>
+                <div class="ap-list-item"><strong>team.approve</strong><span class="badge red">Enabled</span></div>
+                <div class="ap-list-item"><strong>team.deny</strong><span class="badge red">Enabled</span></div>
+                <div class="ap-list-item"><strong>team.suspend</strong><span class="badge">Disabled</span></div>
+                <div class="ap-list-item"><strong>team.suspend.revoke</strong><span class="badge">Disabled</span></div>
+                <div class="ap-list-item"><strong>user.suspend</strong><span class="badge">Disabled</span></div>
+                <div class="ap-list-item"><strong>user.suspend.revoke</strong><span class="badge">Disabled</span></div>
+                <div class="ap-list-item"><strong>event.create</strong><span class="badge red">Enabled</span></div>
+                <div class="ap-list-item"><strong>event.edit</strong><span class="badge red">Enabled</span></div>
+                <div class="ap-list-item"><strong>event.delete</strong><span class="badge">Disabled</span></div>
+                <div class="ap-list-item"><strong>page.access.admin</strong><span class="badge red">Enabled</span></div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h4>Access Summary</h4>
+              <p class="muted" style="margin-top:0;">Use this shell as the frontend base for the real backend permission system. The final version can replace these static states with real checkboxes, user lookups, and server responses.</p>
+              <div class="ap-modal-actions" style="margin-top:16px;">
+                <a class="btn btn-primary" href="#">Save Permissions</a>
+                <a class="btn btn-secondary" href="#">Remove Access</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+        <div class="footer-left">
+          <div class="footer-title">&copy; DBDCompNet</div>
+          <div class="footer-subcopy">2026 all rights reserved</div>
+          <p class="footer-disclaimer">We are not affiliated with Behaviour Interactive or Dead by Daylight.</p>
+          <div class="footer-links">
+            <a href="../../support/legal/terms/">Terms of Service</a>
+            <a href="../../support/legal/privacy/">Privacy Policy</a>
+            <a href="../../support/legal/legal-notice/">Legal Notice</a>
+            <a href="../../support/legal/about/">About</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="social" href="https://x.com/dbdcompunion" target="_blank" rel="noopener" aria-label="X">
+            <img src="../../assets/x.png" alt="X">
+          </a>
+          <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="../../assets/youtube.png" alt="YouTube">
+          </a>
+          <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener" aria-label="Discord">
+            <img src="../../assets/discord.png" alt="Discord">
+          </a>
+          <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" rel="noopener" aria-label="Twitch">
+            <img src="../../assets/twitch.png" alt="Twitch">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

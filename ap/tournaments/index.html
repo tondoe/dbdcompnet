@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tournaments &bull; Admin-Panel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+
+        <nav class="nav-links nav-desktop" aria-label="Admin Panel">
+          <a href="../access/">Access</a>
+          <a href="../teams/">Teams</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../../support/">Support</a>
+          <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-mobile" aria-label="Admin Panel Mobile">
+          <a href="../access/">Access</a>
+          <a href="../teams/">Teams</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../../support/">Support</a>
+          <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow">
+          <p class="ap-kicker">Organization Panel</p>
+          <div class="section-head">
+            <h1 class="section-title" style="margin:0;">Tournaments</h1>
+            <a class="btn btn-secondary" href="../">Back to Admin-Panel</a>
+          </div>
+
+          <p class="muted" style="margin-top:-8px; max-width:76ch;">Tournament management is organization-specific here. Staff with event permissions can create, edit, and delete events while the published versions also appear on the public tournaments and news routes.</p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container narrow">
+          <div class="tour-filter">
+            <div>
+              <div class="badge red">Organization Events</div>
+              <p class="muted" style="margin-top:8px;">This mirrors the public tournament layout but adds management controls.</p>
+            </div>
+
+            <div class="ap-actions">
+              <a class="btn btn-primary" href="./create/">Create Event</a>
+              <a class="btn btn-secondary" href="../../tournaments/">Public Route</a>
+            </div>
+          </div>
+
+          <div class="section-head" id="upcoming">
+            <h2 class="section-title">Upcoming</h2>
+            <a class="section-link" href="#all">Jump to all &rarr;</a>
+          </div>
+
+          <div class="tour-list">
+            <article class="tour-item">
+              <div class="tour-top"><div><h3 class="tour-name">Spring Showdown</h3><p class="tour-meta">Hosted by DBD Comp League</p></div><span class="status upcoming">Upcoming</span></div>
+              <div class="tour-body"><div class="tour-details"><span>Start: <strong>2026-05-03</strong></span><span>End: <strong>2026-05-05</strong></span><span>Format: <strong>BO3</strong></span><span>Region: <strong>EU</strong></span></div><div class="ap-actions"><a class="btn btn-secondary" href="../../tournaments/tournament-name/">View</a><a class="btn btn-primary" href="./tournament-name/edit/">Manage</a></div></div>
+            </article>
+
+            <article class="tour-item">
+              <div class="tour-top"><div><h3 class="tour-name">Invite Masters</h3><p class="tour-meta">Hosted by DBD Comp League</p></div><span class="status upcoming">Invite-Only</span></div>
+              <div class="tour-body"><div class="tour-details"><span>Start: <strong>2026-05-18</strong></span><span>End: <strong>2026-05-20</strong></span><span>Format: <strong>BO5</strong></span><span>Region: <strong>Global</strong></span></div><div class="ap-actions"><a class="btn btn-secondary" href="../../tournaments/tournament-name/">View</a><a class="btn btn-primary" href="./tournament-name/edit/">Manage</a></div></div>
+            </article>
+          </div>
+
+          <div class="section-head" id="all" style="margin-top:34px;">
+            <h2 class="section-title">Published and Past Events</h2>
+            <a class="section-link" href="#upcoming">Back to top &rarr;</a>
+          </div>
+
+          <div class="tour-list">
+            <article class="tour-item">
+              <div class="tour-top"><div><h3 class="tour-name">Winter Finals</h3><p class="tour-meta">Hosted by DBD Comp League</p></div><span class="status completed">Completed</span></div>
+              <div class="tour-body"><div class="tour-details"><span>Start: <strong>2026-02-09</strong></span><span>End: <strong>2026-02-11</strong></span><span>Format: <strong>BO3</strong></span><span>Region: <strong>NA</strong></span></div><div class="ap-actions"><a class="btn btn-secondary" href="../../tournaments/tournament-name/">View</a><a class="btn btn-primary" href="./tournament-name/edit/">Manage</a></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+        <div class="footer-left">
+          <div class="footer-title">&copy; DBDCompNet</div>
+          <div class="footer-subcopy">2026 all rights reserved</div>
+          <p class="footer-disclaimer">We are not affiliated with Behaviour Interactive or Dead by Daylight.</p>
+          <div class="footer-links">
+            <a href="../../support/legal/terms/">Terms of Service</a>
+            <a href="../../support/legal/privacy/">Privacy Policy</a>
+            <a href="../../support/legal/legal-notice/">Legal Notice</a>
+            <a href="../../support/legal/about/">About</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="social" href="https://x.com/dbdcompunion" target="_blank" rel="noopener" aria-label="X"><img src="../../assets/x.png" alt="X"></a>
+          <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" rel="noopener" aria-label="YouTube"><img src="../../assets/youtube.png" alt="YouTube"></a>
+          <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener" aria-label="Discord"><img src="../../assets/discord.png" alt="Discord"></a>
+          <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" rel="noopener" aria-label="Twitch"><img src="../../assets/twitch.png" alt="Twitch"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

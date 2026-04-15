@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Settings &bull; Admin-Panel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+
+        <nav class="nav-links nav-desktop" aria-label="Admin Panel">
+          <a href="../access/">Access</a>
+          <a href="../teams/">Teams</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../../support/">Support</a>
+          <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-mobile" aria-label="Admin Panel Mobile">
+          <a href="../access/">Access</a>
+          <a href="../teams/">Teams</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../../support/">Support</a>
+          <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow ap-shell">
+          <div>
+            <p class="ap-kicker">Organization Panel</p>
+            <div class="section-head">
+              <h1 class="section-title" style="margin:0;">Settings</h1>
+              <a class="btn btn-secondary" href="../">Back to Admin-Panel</a>
+            </div>
+            <p class="muted" style="margin-top:-8px; max-width:78ch;">Settings should let the Admin-Panel manage the Discord invite link, organization region, logo, and description. Organization name and shortcut stay locked outside the panel.</p>
+          </div>
+
+          <div class="ap-split">
+            <div class="ap-card">
+              <h2>Organization Settings</h2>
+              <div class="ap-form-grid" style="margin-top:18px;">
+                <div class="ap-field ap-field--full">
+                  <label for="discord-link">Discord Invite Link</label>
+                  <input class="ap-input" id="discord-link" type="text" value="https://discord.gg/example-org">
+                </div>
+
+                <div class="ap-field">
+                  <label for="org-region">Organization Region</label>
+                  <select class="ap-select" id="org-region">
+                    <option selected>Europe (EU)</option>
+                    <option>North America (NA)</option>
+                    <option>United States (US)</option>
+                    <option>OCE</option>
+                    <option>Global</option>
+                  </select>
+                </div>
+
+                <div class="ap-field">
+                  <label for="logo-name">Change Logo</label>
+                  <input class="ap-input" id="logo-name" type="text" value="dbdcl-logo.png">
+                </div>
+
+                <div class="ap-field ap-field--full">
+                  <label for="org-description">Organization Description</label>
+                  <textarea class="ap-textarea" id="org-description">Competitive Dead by Daylight organization focused on structured tournaments, roster development, and community-led events.</textarea>
+                </div>
+              </div>
+
+              <div class="ap-actions" style="margin-top:18px;">
+                <a class="btn btn-primary" href="#">Save Settings</a>
+                <a class="btn btn-secondary" href="../access/">Open Access</a>
+              </div>
+            </div>
+
+            <div class="ap-stack">
+              <div class="ap-lock-card">
+                <strong>Locked in Admin-Panel</strong>
+                <p class="muted" style="margin:8px 0 0;">Organization name and shortcut cannot be changed here.</p>
+              </div>
+
+              <div class="ap-card">
+                <h3>Automation and Bot Settings</h3>
+                <div class="ap-form-grid" style="margin-top:18px;">
+                  <div class="ap-field">
+                    <label for="logging-channel">Logging Channel for Bot</label>
+                    <input class="ap-input" id="logging-channel" type="text" value="#dbdcl-logs">
+                  </div>
+
+                  <div class="ap-field">
+                    <label for="role-position">Role Position</label>
+                    <input class="ap-input" id="role-position" type="text" value="Tournament Staff">
+                  </div>
+
+                  <div class="ap-field ap-field--full">
+                    <label for="automation-rule">Automation Rule</label>
+                    <textarea class="ap-textarea" id="automation-rule">If a player is registered to more than 3 teams, prevent the registration and show an error that the player has reached the allowed number of teams.</textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+        <div class="footer-left">
+          <div class="footer-title">&copy; DBDCompNet</div>
+          <div class="footer-subcopy">2026 all rights reserved</div>
+          <p class="footer-disclaimer">We are not affiliated with Behaviour Interactive or Dead by Daylight.</p>
+          <div class="footer-links">
+            <a href="../../support/legal/terms/">Terms of Service</a>
+            <a href="../../support/legal/privacy/">Privacy Policy</a>
+            <a href="../../support/legal/legal-notice/">Legal Notice</a>
+            <a href="../../support/legal/about/">About</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="social" href="https://x.com/dbdcompunion" target="_blank" rel="noopener" aria-label="X"><img src="../../assets/x.png" alt="X"></a>
+          <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" rel="noopener" aria-label="YouTube"><img src="../../assets/youtube.png" alt="YouTube"></a>
+          <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener" aria-label="Discord"><img src="../../assets/discord.png" alt="Discord"></a>
+          <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" rel="noopener" aria-label="Twitch"><img src="../../assets/twitch.png" alt="Twitch"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

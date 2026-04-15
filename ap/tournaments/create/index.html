@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Event &bull; Admin-Panel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../../" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="../../../assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+
+        <nav class="nav-links nav-desktop" aria-label="Admin Panel">
+          <a href="../../access/">Access</a>
+          <a href="../../teams/">Teams</a>
+          <a href="../">Tournaments</a>
+          <a href="../../news/">News</a>
+          <a href="../../../support/">Support</a>
+          <a href="../../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav-mobile" aria-label="Admin Panel Mobile">
+          <a href="../../access/">Access</a>
+          <a href="../../teams/">Teams</a>
+          <a href="../">Tournaments</a>
+          <a href="../../news/">News</a>
+          <a href="../../../support/">Support</a>
+          <a href="../../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow ap-shell">
+          <div>
+            <p class="ap-kicker">Organization Panel</p>
+            <div class="section-head">
+              <h1 class="section-title" style="margin:0;">Create Event</h1>
+              <a class="btn btn-secondary" href="../">Back to Tournaments</a>
+            </div>
+            <p class="muted" style="margin-top:-8px; max-width:78ch;">Tournaments are used to create events. This frontend form covers the PDF requirements for event setup, playability, and publishing expectations.</p>
+          </div>
+
+          <div class="ap-split">
+            <div class="ap-card">
+              <h2>Event Setup</h2>
+              <div class="ap-form-grid" style="margin-top:18px;">
+                <div class="ap-field ap-field--full"><label for="event-name">Tournament Name</label><input class="ap-input" id="event-name" type="text" value="DBDCL Spring Showdown"></div>
+                <div class="ap-field"><label for="event-type">Type of Event</label><select class="ap-select" id="event-type"><option selected>4v1</option><option>1v1</option></select></div>
+                <div class="ap-field"><label for="event-cap">Maximum Teams / Users</label><input class="ap-input" id="event-cap" type="text" value="16 Teams"></div>
+                <div class="ap-field"><label for="event-region">Region</label><select class="ap-select" id="event-region"><option>NA</option><option selected>EU</option><option>US</option><option>OCE</option><option>Global (All)</option></select></div>
+                <div class="ap-field"><label for="event-format">Format</label><select class="ap-select" id="event-format"><option>BO1</option><option selected>BO3</option><option>BO5</option><option>BO7</option><option>BO9</option></select></div>
+                <div class="ap-field"><label for="start-date">Tournament Start Date</label><input class="ap-input" id="start-date" type="text" value="2026-05-03"></div>
+                <div class="ap-field"><label for="deadline-date">Deadline for Registrations</label><input class="ap-input" id="deadline-date" type="text" value="2026-05-01"></div>
+                <div class="ap-field ap-field--full"><label for="event-rules">Playability</label><select class="ap-select" id="event-rules"><option selected>Public</option><option>Invite-Only</option></select></div>
+              </div>
+
+              <div class="ap-note" style="margin-top:18px;">Invite-Only events should let the organization choose registered teams and notify captains by automatic email later.</div>
+            </div>
+
+            <div class="ap-stack">
+              <div class="ap-card">
+                <h3>Publishing Flow</h3>
+                <ul class="ap-muted-list">
+                  <li>Create should publish the event on the public tournaments route and the organization subdomain route.</li>
+                  <li>Invite-Only flows should notify selected captains by email from `noreply@dbdcompnet.com` after backend integration.</li>
+                  <li>Editing should reopen all information fields for updates.</li>
+                </ul>
+              </div>
+
+              <div class="ap-card">
+                <h3>Actions</h3>
+                <div class="ap-actions" style="margin-top:16px;"><a class="btn btn-primary" href="#">Create Event</a><a class="btn btn-secondary" href="#">Save Draft</a><a class="btn btn-secondary" href="../tournament-name/edit_bracket/">Edit Bracket</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+        <div class="footer-left"><div class="footer-title">&copy; DBDCompNet</div><div class="footer-subcopy">2026 all rights reserved</div><p class="footer-disclaimer">We are not affiliated with Behaviour Interactive or Dead by Daylight.</p><div class="footer-links"><a href="../../../support/legal/terms/">Terms of Service</a><a href="../../../support/legal/privacy/">Privacy Policy</a><a href="../../../support/legal/legal-notice/">Legal Notice</a><a href="../../../support/legal/about/">About</a></div></div>
+        <div class="footer-right"><a class="social" href="https://x.com/dbdcompunion" target="_blank" rel="noopener" aria-label="X"><img src="../../../assets/x.png" alt="X"></a><a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" rel="noopener" aria-label="YouTube"><img src="../../../assets/youtube.png" alt="YouTube"></a><a class="social" href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener" aria-label="Discord"><img src="../../../assets/discord.png" alt="Discord"></a><a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" rel="noopener" aria-label="Twitch"><img src="../../../assets/twitch.png" alt="Twitch"></a></div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

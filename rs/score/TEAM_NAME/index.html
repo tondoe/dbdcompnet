@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Rating &bull; DBDCompNet</title>
+  <style>
+    :root { color-scheme: dark; --bg:#070709; --panel:#111116; --text:#fff; --muted:#b8b8c2; --red:#e11d2e; --border:rgba(255,255,255,.12); }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: radial-gradient(900px 480px at 20% 0%, rgba(225,29,46,.18), transparent 50%), var(--bg); color: var(--text); font: 16px/1.6 "Lexend", "Segoe UI", sans-serif; }
+    main { width: min(92vw, 760px); padding: 44px; border: 1px solid var(--border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border-radius: 12px; box-shadow: 0 24px 80px rgba(0,0,0,.35); }
+    .kicker { margin: 0 0 10px; color: var(--red); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 48px); line-height: 1.05; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    a { color: #fff; }
+    .route { margin-top: 22px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 8px; color: #fff; background: rgba(255,255,255,.04); font-family: Consolas, monospace; overflow-wrap: anywhere; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--border); text-decoration: none; font-weight: 800; }
+    .btn-primary { background: var(--red); border-color: var(--red); }
+    .route-note { color: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Routing placeholder</p>
+    <h1>Team Rating</h1>
+    <p>Placeholder route for a team rating score.</p>
+    
+    <div class="route">rs/score/TEAM_NAME/</div>
+    <div class="actions">
+      <a class="btn btn-primary" href="../../../">Home</a>
+      <a class="btn" href="../../../demo/">Site Directory</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Settings &bull; DBDCompNet AP</title>
+  <link rel="stylesheet" href="../../../styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header"><div class="container nav"><a class="brand" href="../"><img class="brand-logo" src="../../../assets/logo.png" alt="DBDCompNet logo" /></a><nav class="nav-links nav-desktop"><a href="../access/">Access</a><a href="../teams/">Teams</a><a href="../tournaments/">Tournaments</a><a href="../news/">News</a><a href="../../../support/">Support</a><a href="../settings/">Settings</a><a href="../../../" class="btn btn-primary nav-cta">Leave AP</a></nav></div></header>
+    <main class="site-main">
+      <section class="section"><div class="container narrow">
+        <div class="section-head"><h1 class="section-title" style="margin:0;">Settings</h1><a class="btn btn-secondary" href="../">Back to AP</a></div>
+        <div class="ap-split">
+          <div class="ap-card"><h3>Can Change</h3><ul class="ap-muted-list"><li>Discord Invite Link used by Support on the intern page</li><li>Organization region</li><li>Logo</li><li>Organization description</li></ul></div>
+          <div class="ap-card"><h3>Can Not Change</h3><ul class="ap-muted-list"><li>Organization name</li><li>Shortcut</li></ul></div>
+        </div>
+        <div class="ap-card ap-card--wide" style="margin-top:18px;">
+          <h3>Admin Settings</h3>
+          <div class="ap-form-grid">
+            <label class="ap-field"><span>Discord Invite Link</span><input class="ap-input" placeholder="https://discord.gg/example"></label>
+            <label class="ap-field"><span>Organization Region</span><select class="ap-select"><option>NA</option><option>EU</option><option>US</option><option>OCE</option><option>Global</option></select></label>
+            <label class="ap-field"><span>Change Logo</span><input class="ap-input" type="file"></label>
+            <label class="ap-field"><span>Logging Channel for Bot</span><input class="ap-input" placeholder="#logs"></label>
+            <label class="ap-field"><span>Team Category</span><input class="ap-input" placeholder="Team category"></label>
+            <label class="ap-field"><span>Role Position</span><input class="ap-input" placeholder="Role position"></label>
+            <label class="ap-field ap-field--full"><span>Automation Rule</span><textarea class="ap-textarea">If a player is more than in 3 teams, the team won't be registered. Error: One or more players are in more than the allowed number of teams at the same time.</textarea></label>
+          </div>
+        </div>
+      </div></section>
+    </main>
+  </div>
+</body>
+</html>

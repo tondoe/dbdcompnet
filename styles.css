@@ -380,6 +380,27 @@ h4,
   color:var(--red);
 }
 
+.admin-news-action{
+  color:#fff;
+  background:rgba(255,255,255,0.05);
+  border-color:rgba(255,255,255,0.18);
+}
+
+.admin-news-action:hover{
+  color:#fff;
+  background:rgba(255,255,255,0.09);
+}
+
+.admin-news-action-danger{
+  color:#ff3044;
+  border-color:rgba(225,29,46,0.7);
+}
+
+.admin-news-action-danger:hover{
+  color:#fff;
+  background:rgba(225,29,46,0.9);
+}
+
 /* Prevent nav underline on CTA */
 .nav-links .nav-cta::after{ display:none; }
 .nav-links a.btn-primary:hover{ color:#fff !important; }
@@ -2841,6 +2862,11 @@ body{
   box-shadow:0 0 0 4px rgba(225,29,46,0.10);
 }
 
+.ap-select option{
+  color:#111;
+  background:#fff;
+}
+
 .ap-textarea{
   min-height:130px;
   resize:vertical;
@@ -3048,6 +3074,201 @@ body{
 
   .ap-status-grid,
   .ap-modal-actions{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Forums */
+.forum-shell{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 280px;
+  gap:28px;
+  align-items:start;
+}
+
+.forum-board{
+  display:grid;
+  gap:14px;
+}
+
+.forum-category-card,
+.forum-thread,
+.forum-post,
+.forum-comment{
+  display:block;
+  color:var(--text);
+  text-decoration:none;
+  border:1px solid var(--border-soft);
+  border-radius:16px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
+  padding:20px;
+}
+
+.forum-category-card{
+  text-align:center;
+  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.forum-category-card:hover,
+.forum-thread:hover{
+  transform:translateY(-3px);
+  border-color:rgba(225,29,46,.45);
+  box-shadow:0 16px 38px rgba(0,0,0,.35);
+}
+
+.forum-icon{
+  width:54px;
+  height:54px;
+  margin:0 auto 12px;
+  display:grid;
+  place-items:center;
+  border-radius:18px;
+  color:#fff;
+  font-weight:900;
+  background:radial-gradient(circle at 30% 20%, rgba(255,255,255,.20), transparent 34%), linear-gradient(135deg, rgba(225,29,46,.94), rgba(84,5,12,.86));
+  box-shadow:0 14px 28px rgba(225,29,46,.18);
+}
+
+.forum-sidebar{
+  position:sticky;
+  top:96px;
+  display:grid;
+  gap:16px;
+}
+
+.forum-side-panel{
+  border:1px solid var(--border-soft);
+  border-radius:16px;
+  padding:18px;
+  background:rgba(255,255,255,.035);
+}
+
+.forum-side-panel h3{
+  margin:0 0 12px;
+  font-size:16px;
+}
+
+.forum-side-panel a,
+.forum-tag{
+  display:inline-flex;
+  margin:0 8px 8px 0;
+  color:var(--muted);
+  text-decoration:none;
+  font-size:13px;
+}
+
+.forum-tag{
+  border:1px solid var(--border-soft);
+  border-radius:999px;
+  padding:5px 9px;
+}
+
+.forum-notice{
+  margin-bottom:18px;
+  padding:14px 16px;
+  border:1px solid rgba(225,29,46,.35);
+  border-radius:12px;
+  color:#ffd8dc;
+  background:rgba(225,29,46,.12);
+}
+
+.forum-thread{
+  display:grid;
+  grid-template-columns:54px minmax(0, 1fr);
+  gap:14px;
+}
+
+.forum-avatar{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff;
+  font-weight:900;
+  background:linear-gradient(135deg, rgba(225,29,46,.92), rgba(20,20,26,.92));
+  border:1px solid rgba(255,255,255,.12);
+}
+
+.forum-thread h3,
+.forum-post h2,
+.forum-comment h3{
+  margin:0 0 6px;
+}
+
+.forum-meta,
+.forum-userline{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.forum-userline{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:baseline;
+  margin-bottom:12px;
+}
+
+.forum-role{
+  color:var(--muted);
+}
+
+.forum-role.organization{ color:#7c7cff; }
+.forum-role.staff{ color:#ff3131; }
+
+.forum-form{
+  display:grid;
+  gap:16px;
+}
+
+.forum-field{
+  display:grid;
+  gap:8px;
+}
+
+.forum-field label{
+  font-weight:800;
+}
+
+.forum-field input,
+.forum-field select,
+.forum-field textarea{
+  width:100%;
+  border:1px solid var(--border-soft);
+  border-radius:12px;
+  padding:13px 14px;
+  color:var(--text);
+  background:rgba(255,255,255,.04);
+  font:inherit;
+}
+
+.forum-field select option{
+  color:#111;
+  background:#fff;
+}
+
+.forum-field textarea{
+  min-height:160px;
+  resize:vertical;
+}
+
+.forum-manager-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:16px;
+}
+
+@media (max-width: 900px){
+  .forum-shell{
+    grid-template-columns:1fr;
+  }
+
+  .forum-sidebar{
+    position:static;
+  }
+
+  .forum-manager-grid{
     grid-template-columns:1fr;
   }
 }

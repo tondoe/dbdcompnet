@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DBD Comp League &bull; DBDCompNet</title>
+  <title>Organization &bull; DBDCompNet</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
   <div class="page">
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="../../organizations/uuid-of-org/" aria-label="DBD Comp League home">
+        <a class="brand" href="../../organizations/" aria-label="DBDCompNet organizations">
           <img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" />
         </a>
 
@@ -26,7 +26,7 @@
           <a href="../../tournaments/">Tournaments</a>
           <a href="../../news/">News</a>
           <a href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener">Support</a>
-          <a href="../../ap/" class="btn btn-primary nav-cta">Admin</a>
+          <a href="../../admin/ap/" class="btn btn-primary nav-cta">Admin</a>
         </nav>
 
         <input class="nav-toggle" type="checkbox" id="nav-toggle" />
@@ -39,7 +39,7 @@
           <a href="../../tournaments/">Tournaments</a>
           <a href="../../news/">News</a>
           <a href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener">Support</a>
-          <a href="../../ap/" class="btn btn-primary nav-cta">Admin</a>
+          <a href="../../admin/ap/" class="btn btn-primary nav-cta">Admin</a>
         </nav>
       </div>
     </header>
@@ -48,18 +48,23 @@
       <section class="hero org-hero">
         <div class="container hero-grid org-hero-grid">
           <div class="hero-left org-hero-left">
-            <p class="org-kicker">Organization Webpage</p>
-            <h1>DBD Comp League</h1>
-            <p class="subtitle">The home base for DBD Comp League teams, tournament operations, and community updates inside the DBDCompNet ecosystem.</p>
+            <p class="org-kicker">Organization</p>
+            <h1>DBDCompNet</h1>
+            <p class="subtitle">The official organization profile for the DBD Competitive Network.</p>
 
             <p class="org-description">
-              This organization page mirrors the main platform structure, but only shows DBD Comp League content.
-              Backend wiring can later replace this placeholder copy, logo, and admin access with live organization data.
+              This page shows the organization logo, short description, registered team count, hosted tournaments,
+              and the primary actions available for teams and authorized visitors.
             </p>
 
+            <div class="org-card-meta">
+              <span><strong>XX</strong> Registered Teams</span>
+              <span><strong>XX</strong> Hosted Tournaments</span>
+            </div>
+
             <div class="hero-actions org-hero-actions">
-              <a href="../../tournaments/" class="btn btn-primary">View Tournaments</a>
-              <a href="../../teams/" class="btn btn-secondary">View Teams</a>
+              <a href="../../teams/TEAM_ID/application/" class="btn btn-primary">Apply to Join</a>
+              <a href="../../intern/UUID-OF-ORG/" class="btn btn-secondary">Visit Site</a>
             </div>
           </div>
 
@@ -74,15 +79,15 @@
       <section class="section section-alt">
         <div class="container narrow">
           <div class="section-head">
-            <h2 class="section-title">Teams</h2>
+            <h2 class="section-title">Registered Teams</h2>
             <a class="section-link" href="../../teams/">View all &rarr;</a>
           </div>
 
           <div class="card-grid">
             <article class="card">
-              <h3>DBDCL Main Roster</h3>
-              <p class="muted">Registered on DBD Comp League &bull; Active roster</p>
-              <p class="muted">This slot represents the kind of teams that will be filtered to the organization subdomain only.</p>
+              <h3>Team Slot</h3>
+              <p class="muted">Registered Teams are shown here when backend data is connected.</p>
+              <p class="muted">This area will list the teams connected to the organization profile.</p>
               <div class="org-card-meta">
                 <span><strong>XX</strong> Players</span>
                 <span><strong>XX</strong> Wins</span>
@@ -91,9 +96,9 @@
             </article>
 
             <article class="card">
-              <h3>DBDCL Academy</h3>
-              <p class="muted">Registered on DBD Comp League &bull; Development team</p>
-              <p class="muted">Team modal stays the same, but this page only surfaces teams connected to the organization.</p>
+              <h3>Team Slot</h3>
+              <p class="muted">Team information will include name, members, region, and current status.</p>
+              <p class="muted">The route is ready for organization-owned team data.</p>
               <div class="org-card-meta">
                 <span><strong>XX</strong> Players</span>
                 <span><strong>XX</strong> Wins</span>
@@ -102,9 +107,9 @@
             </article>
 
             <article class="card">
-              <h3>DBDCL Community</h3>
-              <p class="muted">Registered on DBD Comp League &bull; Recruiting</p>
-              <p class="muted">Jamie can later swap these placeholders for real organization-owned teams once backend data is ready.</p>
+              <h3>Team Slot</h3>
+              <p class="muted">Additional registered teams can be displayed here.</p>
+              <p class="muted">This keeps the page ready for the PDF routing plan without requiring live data yet.</p>
               <div class="org-card-meta">
                 <span><strong>XX</strong> Players</span>
                 <span><strong>XX</strong> Wins</span>
@@ -126,8 +131,8 @@
             <article class="tour-item">
               <div class="tour-top">
                 <div>
-                  <h3 class="tour-name">DBDCL Spring Circuit</h3>
-                  <p class="tour-meta">Hosted by DBD Comp League</p>
+                  <h3 class="tour-name">Tournament Slot</h3>
+                  <p class="tour-meta">Hosted by this organization</p>
                 </div>
                 <span class="status upcoming">Upcoming</span>
               </div>
@@ -147,8 +152,8 @@
             <article class="tour-item">
               <div class="tour-top">
                 <div>
-                  <h3 class="tour-name">DBDCL Summer Major</h3>
-                  <p class="tour-meta">Hosted by DBD Comp League</p>
+                  <h3 class="tour-name">Tournament Slot</h3>
+                  <p class="tour-meta">Hosted by this organization</p>
                 </div>
                 <span class="status live">Live</span>
               </div>
@@ -171,22 +176,22 @@
       <section class="section section-alt">
         <div class="container narrow">
           <div class="section-head">
-            <h2 class="section-title">Organization Notes</h2>
-            <a class="section-link" href="../../ap/">Admin Panel &rarr;</a>
+            <h2 class="section-title">Organization Information</h2>
+            <a class="section-link" href="../../admin/ap/">Admin Panel &rarr;</a>
           </div>
 
           <div class="org-notes">
             <article class="card">
-              <h3>What changes in org mode</h3>
-              <p class="muted">Logo becomes organization branding, the Login button becomes Admin, Organizations is removed from nav, and Support points to the organization Discord.</p>
+              <h3>Short Description</h3>
+              <p class="muted">Every organization profile includes a short description so users can understand the organization before applying.</p>
             </article>
             <article class="card">
-              <h3>What stays shared</h3>
-              <p class="muted">News still routes back to the main DBDCompNet news page, and the team modal structure can stay the same for now.</p>
+              <h3>Organization Logo</h3>
+              <p class="muted">The logo panel is reserved for the organization logo shown on the profile page.</p>
             </article>
             <article class="card">
-              <h3>What backend will later control</h3>
-              <p class="muted">Permissions, real org logos, organization descriptions, team and tournament filtering, and Discord links can all be swapped in by Jamie later.</p>
+              <h3>Permissions</h3>
+              <p class="muted">Visit Site routes to the intern organization page, which is intended only for visitors with the right permissions.</p>
             </article>
           </div>
         </div>

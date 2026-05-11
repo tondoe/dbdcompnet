@@ -27,6 +27,7 @@
                     <a href="../teams/">Teams</a>
                     <a href="../tournaments/">Tournaments</a>
                     <a href="../news/">News</a>
+                    <a href="../forums/">Forums</a>
                     <a href="../support/">Support</a>
                     <a href="../login/" class="btn btn-primary nav-cta">Login</a>
 
@@ -72,6 +73,7 @@
                     <a href="../teams/">Teams</a>
                     <a href="../tournaments/">Tournaments</a>
                     <a href="../news/">News</a>
+                    <a href="../forums/">Forums</a>
                     <a href="../support/">Support</a>
                     <a href="../login/" class="btn btn-primary nav-cta">Login</a>
 
@@ -109,44 +111,112 @@
                         <a href="../" class="btn btn-secondary">Back to Home</a>
           </div>
 
-                    <p class="muted" style="margin-top:-8px;">
-                        Account pages are now structured as a real frontend area for settings, team links, and account-side tools.
+                    <p class="muted" style="margin-top:-8px; max-width:70ch;">
+                        Manage your DBDCompNet account, profile display, MyTeam access, support tickets, and account actions.
                     </p>
 
-                    <!-- PROFILE CARD -->
                     <div class="card" style="margin-top:24px;">
-                        <h3>Profile Info</h3>
+                        <div class="section-head" style="margin-bottom:18px;">
+                            <div>
+                                <h3 style="margin:0 0 6px;">Display</h3>
+                                <p class="muted" style="margin:0;">Profile and account controls shown for the logged-in user.</p>
+                            </div>
+                            <a class="btn btn-secondary" href="../account/UUID-OF-USER/">View Public Profile</a>
+                        </div>
 
-                        <div style="margin-top:16px;">
-                            <p><strong>Username:</strong> DemoUser</p>
-                            <p><strong>Email:</strong> user@email.com</p>
-                            <p><strong>Role:</strong> Player</p>
-          </div>
-          </div>
+                        <div class="card-grid">
+                            <a class="card" href="../account/settings/#profile-picture">
+                                <h3>Edit Profile Picture</h3>
+                                <p class="muted">Frontend placeholder for profile image changes.</p>
+                            </a>
 
-                    <!-- ACTIONS -->
-                    <div class="card-grid" style="margin-top:20px;">
+                            <a class="card" href="../account/settings/#displayname">
+                                <h3>Edit Displayname</h3>
+                                <p class="muted">Frontend placeholder for display name changes.</p>
+                            </a>
 
-                        <a class="card" href="../account/settings/">
-                            <h3>Edit Profile</h3>
-                            <p class="muted">Change username, email, and account settings.</p>
-                        </a>
+                            <a class="card" href="../account/settings/#username">
+                                <h3>Edit Username</h3>
+                                <p class="muted">Frontend placeholder for account username changes.</p>
+                            </a>
 
-                        <a class="card" href="../myteam/">
-                            <h3>My Teams</h3>
-                            <p class="muted">View teams you are part of.</p>
-                        </a>
+                            <a class="card" href="../account/myteam/">
+                                <h3>MyTeam</h3>
+                                <p class="muted">Manage your team, suspensions, settings, organizations, and invites.</p>
+                            </a>
 
-                        <a class="card" href="../support/accounts/">
-                            <h3>Applications</h3>
-                            <p class="muted">Track account support info, access help, and future request flows.</p>
-                        </a>
+                            <a class="card" href="../account/settings/#delete_account">
+                                <h3>Delete Account</h3>
+                                <p class="muted">Account deletion placeholder for backend confirmation.</p>
+                            </a>
 
-                        <a class="card" href="../support/legal/privacy/">
-                            <h3>Privacy</h3>
-                            <p class="muted">Quick access to privacy and account-policy references.</p>
-                        </a>
-          </div>
+                            <a class="card" href="../account/settings/#revoke-agreement">
+                                <h3>Revoke Agreement</h3>
+                                <p class="muted">Placeholder for revoking active terms or account agreements.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-top:24px;">
+                        <div class="section-head" style="margin-bottom:18px;">
+                            <div>
+                                <h3 style="margin:0 0 6px;">MyTeam</h3>
+                                <p class="muted" style="margin:0;">Account-side team management routes from the pathway plan.</p>
+                            </div>
+                            <a class="btn btn-secondary" href="../account/myteam/">Open MyTeam</a>
+                        </div>
+
+                        <div class="card-grid">
+                            <a class="card" href="../account/myteam/suspensions/">
+                                <h3>Active Suspensions</h3>
+                                <p class="muted">Includes appeal access for active team suspensions.</p>
+                            </a>
+
+                            <a class="card" href="../account/myteam/settings/">
+                                <h3>Settings</h3>
+                                <p class="muted">Change name, logo, main roster, and sub roster.</p>
+                            </a>
+
+                            <a class="card" href="../account/myteam/organizations/">
+                                <h3>Organizations</h3>
+                                <p class="muted">View registered organizations connected to your team.</p>
+                            </a>
+
+                            <a class="card" href="../account/myteam/invites/">
+                                <h3>Invites</h3>
+                                <p class="muted">View, accept, or deny organization invites. Accepting an invite registers the team for the tournament immediately.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-top:24px;">
+                        <h3>When looking at someone else's account</h3>
+                        <p class="muted">
+                            Public account pages use <a href="../account/UUID-OF-USER/">/account/UUID-OF-USER/</a>.
+                        </p>
+
+                        <div class="card-grid" style="margin-top:18px;">
+                            <article class="card">
+                                <h3>Displayname <span class="badge red">Badge</span></h3>
+                                <p class="muted">Username</p>
+                            </article>
+
+                            <article class="card">
+                                <h3>Profile Picture</h3>
+                                <p class="muted">Profile picture placeholder.</p>
+                            </article>
+
+                            <article class="card">
+                                <h3>Teams Registered</h3>
+                                <p class="muted">(Team Name)<br>(Team Name)</p>
+                            </article>
+
+                            <article class="card">
+                                <h3>Organizations Registered</h3>
+                                <p class="muted">(Organization Name)<br>(Organization Name)</p>
+                            </article>
+                        </div>
+                    </div>
           </div>
             </section>
 

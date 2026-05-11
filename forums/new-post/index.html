@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Forum Post &bull; DBDCompNet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../" aria-label="DBDCompNet Home"><img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" /></a>
+        <nav class="nav-links nav-desktop" aria-label="Primary">
+          <a href="../../organizations/">Organizations</a><a href="../../teams/">Teams</a><a href="../../tournaments/">Tournaments</a><a href="../../news/">News</a><a href="../../forums/">Forums</a><a href="../../support/">Support</a><a href="../../login/" class="btn btn-primary nav-cta">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow">
+          <div class="section-head">
+            <div>
+              <p class="muted" style="text-transform:uppercase; letter-spacing:.18em; font-size:12px; margin:0 0 10px;">Forums</p>
+              <h1 class="section-title" style="margin:0;">Creating a Post</h1>
+            </div>
+            <a class="btn btn-secondary" href="../">Back to Forums</a>
+          </div>
+
+          <form class="card forum-form" action="#" method="get">
+            <div class="forum-field">
+              <label for="forum-category">Choose Category</label>
+              <select id="forum-category" name="category">
+                <option>General Discussions</option>
+                <option>Regulations</option>
+                <option>Organizer Discussions</option>
+              </select>
+            </div>
+
+            <div class="forum-field">
+              <label for="forum-header">Header</label>
+              <input id="forum-header" name="header" type="text" placeholder="Post title" />
+            </div>
+
+            <div class="forum-field">
+              <label for="forum-body">Text + Media Upload</label>
+              <textarea id="forum-body" name="body" placeholder="Write your post. Media upload will be connected by backend later."></textarea>
+            </div>
+
+            <div class="forum-field">
+              <label for="forum-media">Media Upload</label>
+              <input id="forum-media" name="media" type="file" />
+            </div>
+
+            <button class="btn btn-primary" type="button">Publish</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

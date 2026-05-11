@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forum Manager &bull; DBDCompNet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../" aria-label="DBDCompNet Home"><img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" /></a>
+        <nav class="nav-links nav-desktop" aria-label="Primary">
+          <a href="../../organizations/">Organizations</a><a href="../../teams/">Teams</a><a href="../../tournaments/">Tournaments</a><a href="../../news/">News</a><a href="../../forums/">Forums</a><a href="../../support/">Support</a><a href="../../login/" class="btn btn-primary nav-cta">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow">
+          <div class="section-head">
+            <div>
+              <p class="muted" style="text-transform:uppercase; letter-spacing:.18em; font-size:12px; margin:0 0 10px;">verify.staff only</p>
+              <h1 class="section-title" style="margin:0;">Manager Mode</h1>
+            </div>
+            <a class="btn btn-secondary" href="../">Back to Forums</a>
+          </div>
+
+          <div class="card">
+            <p class="muted">The Manager-Mode is exclusive to people with a verify.staff permission. Within Manager-Mode, staff can create new categories and delete them.</p>
+
+            <form class="forum-form" action="#" method="get" style="margin-top:22px;">
+              <div class="forum-field">
+                <label for="cat-name">Name</label>
+                <input id="cat-name" type="text" placeholder="Category name" />
+              </div>
+              <div class="forum-field">
+                <label for="cat-desc">Short Description (max. 100 Characters)</label>
+                <input id="cat-desc" type="text" maxlength="100" placeholder="Short description" />
+              </div>
+              <div class="forum-field">
+                <label for="cat-image">Image</label>
+                <input id="cat-image" type="file" />
+              </div>
+              <div class="forum-field">
+                <label for="cat-type">Type</label>
+                <select id="cat-type">
+                  <option>Private</option>
+                  <option>Public</option>
+                  <option>Restricted</option>
+                </select>
+                <p class="muted" style="margin:0;">Private: only selected users can read and post. Public: anyone can read, DBDCompNet accounts can comment and post. Restricted: all can read, selected users can post.</p>
+              </div>
+              <div class="forum-field">
+                <label for="cat-settings">Settings (opens only for Private & Restricted)</label>
+                <input id="cat-settings" type="text" placeholder="Selected permissions or users" />
+              </div>
+              <button class="btn btn-primary" type="button">Create Category</button>
+            </form>
+          </div>
+
+          <h2 class="section-title" style="margin:32px 0 16px;">Categories are displayed</h2>
+          <div class="forum-manager-grid">
+            <article class="forum-category-card">
+              <div class="forum-icon">IM</div>
+              <h3>Name</h3>
+              <p class="muted">Short description</p>
+              <span class="forum-tag">Type</span>
+            </article>
+            <article class="forum-category-card">
+              <div class="forum-icon">RG</div>
+              <h3>Regulations</h3>
+              <p class="muted">Rules and policy discussions.</p>
+              <span class="forum-tag">Public</span>
+            </article>
+            <article class="forum-category-card">
+              <div class="forum-icon">OD</div>
+              <h3>Organizer Discussions</h3>
+              <p class="muted">Private organizer category.</p>
+              <span class="forum-tag">Private</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

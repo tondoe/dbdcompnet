@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Organization Admin Panel &bull; DBDCompNet</title>
+  <title>DBDCompNet Staff Admin Panel &bull; DBDCompNet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,12 +17,11 @@
       <div class="container nav">
         <a class="brand" href="../../" aria-label="DBDCompNet Home"><img class="brand-logo" src="../../assets/logo.png" alt="DBDCompNet logo" /></a>
         <nav class="nav-links nav-desktop" aria-label="Admin Panel">
-          <a href="access/">Access</a>
-          <a href="teams/">Teams</a>
+          <a href="users/">Users</a>
+          <a href="organizations/">Organizations</a>
           <a href="tournaments/">Tournaments</a>
           <a href="news/">News</a>
-          <a href="../../support/">Support</a>
-          <a href="settings/">Settings</a>
+          <a href="support/support-tickets/">Tickets</a>
           <a href="../../" class="btn btn-primary nav-cta">Leave AP</a>
         </nav>
       </div>
@@ -32,27 +31,28 @@
       <section class="section">
         <div class="container narrow">
           <div class="ap-hero">
-            <p class="ap-kicker">Organization Panel</p>
+            <p class="ap-kicker">DBDCompNet Staff</p>
             <div class="ap-title-lockup">
               <div class="ap-icon"></div>
               <div>
-                <h1>Admin Panel</h1>
-                <p>Organization staff tools for access, teams, tournaments, news, and settings. The Login action is replaced by Leave AP and returns to the organization home/subdomain.</p>
+                <h1>DBDCompNet Staff Admin Panel</h1>
+                <p>Staff tools for platform moderation, users, organizations, support tickets, tournaments, and news. This is the DBDCompNet staff admin route.</p>
               </div>
             </div>
             <div class="ap-meta-row">
-              <span>page.access.admin required</span>
-              <span>Organization specific display</span>
-              <span>Backend-ready controls</span>
+              <span>DBDCN staff access required</span>
+              <span>Platform-wide admin tools</span>
+              <span>Tickets can be viewed and answered here</span>
             </div>
           </div>
 
           <div class="ap-panel-grid" style="margin-top:28px;">
-            <a class="ap-card" href="access/"><h3>Access</h3><p>Search users and manage organization permissions.</p></a>
-            <a class="ap-card" href="teams/"><h3>Teams</h3><p>View registered teams and open moderation actions.</p></a>
-            <a class="ap-card" href="tournaments/"><h3>Tournaments</h3><p>Create, edit, and delete organization-specific events.</p></a>
-            <a class="ap-card" href="news/"><h3>News</h3><p>Create, preview, edit, and delete organization news posts.</p></a>
-            <a class="ap-card" href="settings/"><h3>Settings</h3><p>Discord invite, region, logo, description, bot logs, team categories, and automation rules.</p></a>
+            <a class="ap-card" href="users/"><h3>Users</h3><p>View users and open moderation actions.</p></a>
+            <a class="ap-card" href="organizations/"><h3>Organizations</h3><p>Create, edit, verify, suspend, and manage organizations.</p></a>
+            <a class="ap-card" href="support/support-tickets/"><h3>Support Tickets</h3><p>View and answer tickets submitted through the support ticket system.</p></a>
+            <a class="ap-card" href="access/"><h3>Access</h3><p>Manage permissions for the DBDCompNet staff admin panel.</p></a>
+            <a class="ap-card" href="tournaments/"><h3>Tournaments</h3><p>Review and manage platform tournament routes.</p></a>
+            <a class="ap-card" href="news/"><h3>News</h3><p>Create, preview, edit, and delete platform news posts.</p></a>
           </div>
         </div>
       </section>

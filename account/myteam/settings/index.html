@@ -1,37 +1,117 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MyTeam Settings &bull; DBDCompNet</title>
-  <meta http-equiv="refresh" content="0; url=../../../account/settings/">
-  <style>
-    :root { color-scheme: dark; --bg:#070709; --panel:#111116; --text:#fff; --muted:#b8b8c2; --red:#e11d2e; --border:rgba(255,255,255,.12); }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: radial-gradient(900px 480px at 20% 0%, rgba(225,29,46,.18), transparent 50%), var(--bg); color: var(--text); font: 16px/1.6 "Lexend", "Segoe UI", sans-serif; }
-    main { width: min(92vw, 760px); padding: 44px; border: 1px solid var(--border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border-radius: 12px; box-shadow: 0 24px 80px rgba(0,0,0,.35); }
-    .kicker { margin: 0 0 10px; color: var(--red); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 48px); line-height: 1.05; }
-    p { margin: 0 0 16px; color: var(--muted); }
-    a { color: #fff; }
-    .route { margin-top: 22px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 8px; color: #fff; background: rgba(255,255,255,.04); font-family: Consolas, monospace; overflow-wrap: anywhere; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--border); text-decoration: none; font-weight: 800; }
-    .btn-primary { background: var(--red); border-color: var(--red); }
-    .route-note { color: #fff; }
-  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../../styles.css" />
 </head>
+
 <body>
-  <main>
-    <p class="kicker">Routing placeholder</p>
-    <h1>MyTeam Settings</h1>
-    <p>Compatibility route for team/account settings.</p>
-    <p class="route-note">Redirecting to <a href="../../../account/settings/">../../../account/settings/</a>.</p>
-    <div class="route">account/myteam/settings/</div>
-    <div class="actions">
-      <a class="btn btn-primary" href="../../../">Home</a>
-      <a class="btn" href="../../../demo/">Site Directory</a>
-    </div>
-  </main>
+  <div class="page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../../" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="../../../assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+
+        <nav class="nav-links nav-desktop" aria-label="Primary">
+          <a href="../../../organizations/">Organizations</a>
+          <a href="../../../teams/">Teams</a>
+          <a href="../../../tournaments/">Tournaments</a>
+          <a href="../../../news/">News</a>
+          <a href="../../../support/">Support</a>
+          <a href="../../../login/" class="btn btn-primary nav-cta">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="section">
+        <div class="container narrow">
+          <div class="section-head">
+            <h1 class="section-title" style="margin:0;">MyTeam Settings</h1>
+            <a class="btn btn-secondary" href="../">Back to MyTeam</a>
+          </div>
+
+          <p class="muted" style="margin-top:-8px; max-width:76ch;">
+            Team settings for roster details, public team information, and deletion controls. Backend confirmation will connect these UI-only controls later.
+          </p>
+
+          <div class="card-grid" style="margin-top:28px;">
+            <article class="card" id="team-name">
+              <h3>Team Name</h3>
+              <p class="muted">Change the team display name once backend permissions are connected.</p>
+            </article>
+
+            <article class="card" id="team-region">
+              <h3>Region</h3>
+              <p class="muted">Update the team's competitive region.</p>
+            </article>
+
+            <article class="card" id="team-logo">
+              <h3>Team Logo</h3>
+              <p class="muted">Upload or replace the team logo.</p>
+            </article>
+
+            <article class="card" id="team-roster">
+              <h3>Roster</h3>
+              <p class="muted">Change main roster and sub roster players.</p>
+            </article>
+          </div>
+
+          <article class="card" id="delete_team" style="margin-top:28px;">
+            <p class="muted" style="text-transform:uppercase; letter-spacing:0.16em; font-size:12px; margin:0 0 10px;">Team Deletion</p>
+            <h2 style="margin:0 0 10px;">Delete Team</h2>
+            <p class="muted">
+              User confirms here that the team can be deleted. All users are removed and the team is deleted.
+              The team is removed from registered tournaments but not from already played tournaments. All organizations
+              that the team was registered on are informed.
+            </p>
+            <p class="muted">Automatic mails should be checked when the backend connects this action.</p>
+            <button class="btn btn-primary" type="button">Confirm Team Deletion</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+        <div class="footer-left">
+          <div class="footer-title">&copy; DBDCompNet</div>
+          <div class="footer-subcopy">2026 all rights reserved</div>
+          <p class="footer-disclaimer">We are not affiliated with Behaviour Interactive or Dead by Daylight.</p>
+          <div class="footer-links">
+            <a href="../../../support/legal/terms/">Terms of Service</a>
+            <a href="../../../support/legal/privacy/">Privacy Policy</a>
+            <a href="../../../support/legal/legal-notice/">Legal Notice</a>
+            <a href="../../../support/legal/about/">About</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="social" href="https://x.com/DBDCompNet" target="_blank" rel="noopener" aria-label="X">
+            <img src="../../../assets/x.png" alt="X">
+          </a>
+          <a class="social" href="https://www.youtube.com/@DBDCompNet" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="../../../assets/youtube.png" alt="YouTube">
+          </a>
+          <a class="social" href="https://discord.gg/aZjGqApf7E" target="_blank" rel="noopener" aria-label="Discord">
+            <img src="../../../assets/discord.png" alt="Discord">
+          </a>
+          <a class="social" href="https://www.twitch.tv/dbdcompnet" target="_blank" rel="noopener" aria-label="Twitch">
+            <img src="../../../assets/twitch.png" alt="Twitch">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>

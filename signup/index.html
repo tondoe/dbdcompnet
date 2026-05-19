@@ -138,25 +138,15 @@
                                         placeholder="you@email.com" autocomplete="email" />
           </div>
 
-                                <div class="two-col">
-                                    <div class="field">
-                                        <label for="discord-user">Discord Username</label>
-                                        <input class="input" id="discord-user" name="discord_user" type="text"
-                                            placeholder="name#0000" />
-          </div>
-
-                                    <div class="field">
-                                        <label for="discord-id">Discord ID</label>
-                                        <input class="input" id="discord-id" name="discord_id_last4" type="text"
-                                            placeholder="S0XX1234" maxlength="20" />
-                                        <p class="help-text">Having trouble finding your ID?
-                                            <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID"
-                                                target="_blank" rel="noopener noreferrer">
-                                                Learn more.
-                                            </a>
-                                        </p>
-          </div>
-          </div>
+                                <div class="field">
+                                    <label for="discord_id">Discord ID</label>
+                                    <input class="input" id="discord_id" name="discord_id" type="text"
+                                        placeholder="Enter your Discord ID" inputmode="numeric" />
+                                    <p class="muted" style="margin-top:8px; font-size:13px;">
+                                        If you don't want to Signup using your Discord Account, you can enter your ID
+                                        manually. Otherwise we always recommend Signup with Discord.
+                                    </p>
+                                </div>
 
                                 <div class="two-col">
                                     <div class="field">
@@ -194,6 +184,10 @@
                                     <a class="btn btn-secondary" href="../login/">Already have an account?</a>
           </div>
 
+                                <div class="auth-actions" style="margin-top:12px;">
+                                    <button class="btn btn-discord" type="button">Signup with Discord</button>
+                                </div>
+
                                 <p class="muted" style="margin-top:12px; font-size:13px;">
                                     Note: Password format and account ID generation are handled by the system after
                                     registration.
@@ -227,13 +221,13 @@
           </div>
 
                 <div class="footer-right" aria-label="Social links">
-                    <a class="social" href="#" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                    <a class="social" href="https://x.com/DBDCompNet" target="_blank" rel="noopener" aria-label="X (Twitter)">
                         <img src="../assets/x.png" alt="X" />
                     </a>
-                    <a class="social" href="#" target="_blank" rel="noopener" aria-label="YouTube">
+                    <a class="social" href="https://www.youtube.com/@DBDCompNet" target="_blank" rel="noopener" aria-label="YouTube">
                         <img src="../assets/youtube.png" alt="YouTube" />
                     </a>
-                    <a class="social" href="#" target="_blank" rel="noopener" aria-label="Discord">
+                    <a class="social" href="https://discord.gg/aZjGqApf7E" target="_blank" rel="noopener" aria-label="Discord">
                         <img src="../assets/discord.png" alt="Discord" />
                     </a>
           </div>

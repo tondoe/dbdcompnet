@@ -44,7 +44,14 @@
             Team account tools for suspensions, settings, registered organizations, and organization invites.
           </p>
 
-          <div class="card-grid" style="margin-top:28px;">
+          <article class="card" id="no_team_found" style="margin-top:28px;">
+            <p class="muted" style="text-transform:uppercase; letter-spacing:0.16em; font-size:12px; margin:0 0 10px;">No Team Found</p>
+            <h2 style="margin:0 0 10px;">Sorry. It seems that you do not have a team.</h2>
+            <p class="muted">If you wish to create one, click on "Create Team" below.</p>
+            <a class="btn btn-primary" href="create-team/#create_a_team">Create Team</a>
+          </article>
+
+          <div class="card-grid" id="team_tools" hidden data-backend-state="has-team" style="margin-top:28px;">
             <a class="card" href="suspensions/">
               <h3>Active Suspensions</h3>
               <p class="muted">View active team suspensions and start an appeal request when available.</p>
@@ -63,6 +70,16 @@
             <a class="card" href="invites/">
               <h3>Invites</h3>
               <p class="muted">View invites, accept invites, or deny invites. Accepted invites register the team immediately.</p>
+            </a>
+
+            <a class="card" href="applications/">
+              <h3>Applications</h3>
+              <p class="muted">Accept or deny users who applied to join the team.</p>
+            </a>
+
+            <a class="card" href="../my-teams/">
+              <h3>My Teams</h3>
+              <p class="muted">View every team the user is in and leave a team when needed.</p>
             </a>
           </div>
         </div>
@@ -84,16 +101,16 @@
         </div>
 
         <div class="footer-right">
-          <a class="social" href="https://x.com/dbdcompunion" target="_blank" rel="noopener" aria-label="X">
+          <a class="social" href="https://x.com/DBDCompNet" target="_blank" rel="noopener" aria-label="X">
             <img src="../../assets/x.png" alt="X">
           </a>
-          <a class="social" href="https://www.youtube.com/@DBDCompUnion" target="_blank" rel="noopener" aria-label="YouTube">
+          <a class="social" href="https://www.youtube.com/@DBDCompNet" target="_blank" rel="noopener" aria-label="YouTube">
             <img src="../../assets/youtube.png" alt="YouTube">
           </a>
-          <a class="social" href="https://discord.gg/dbdcompunion" target="_blank" rel="noopener" aria-label="Discord">
+          <a class="social" href="https://discord.gg/aZjGqApf7E" target="_blank" rel="noopener" aria-label="Discord">
             <img src="../../assets/discord.png" alt="Discord">
           </a>
-          <a class="social" href="https://twitch.tv/dbdcompunion" target="_blank" rel="noopener" aria-label="Twitch">
+          <a class="social" href="https://www.twitch.tv/dbdcompnet" target="_blank" rel="noopener" aria-label="Twitch">
             <img src="../../assets/twitch.png" alt="Twitch">
           </a>
         </div>

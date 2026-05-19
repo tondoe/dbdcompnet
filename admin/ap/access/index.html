@@ -13,15 +13,15 @@
       <section class="section">
         <div class="container narrow">
           <div class="section-head"><h1 class="section-title" style="margin:0;">Access</h1><a class="btn btn-secondary" href="../">Back to AP</a></div>
-          <p class="muted">Access is the menu for organizations to manage permissions. Permissions can only be given by the Organization Account or users with <strong>admin.perms</strong>.</p>
+          <p class="muted">Manage permissions for the DBDCompNet Admin-Panel. Permission needed: <strong>staff.admin</strong>.</p>
           <div class="ap-card ap-card--wide">
             <div class="ap-toolbar">
-              <input class="ap-search" type="search" placeholder="Search for a user" />
-              <button class="btn btn-primary" type="button">Add user permissions</button>
+              <input class="ap-search" type="search" placeholder="Search UUID only" />
+              <a class="btn btn-primary" href="UUID-OF-USER/perms/">Add User Permissions</a>
             </div>
             <p class="ap-note">Opens a menu with all permissions that can be given to that user. Enable or disable a permission for a user.</p>
             <ol class="ap-permission-list">
-              <li>admin.perms</li><li>team.approve</li><li>team.deny</li><li>team.suspend</li><li>team.suspend.revoke</li><li>user.suspend</li><li>user.suspend.revoke</li><li>event.create</li><li>event.edit</li><li>event.delete</li><li>page.access.admin</li>
+              <li>verify.staff</li><li>staff.admin</li><li>staff.user.suspend</li><li>staff.user.suspend.revoke</li><li>staff.event.all</li>
             </ol>
           </div>
         </div>

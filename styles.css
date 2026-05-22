@@ -384,6 +384,14 @@ h4,
   color:var(--red);
 }
 
+.support-search-btn{
+  color:#fff;
+}
+
+.support-search-btn:hover{
+  color:#fff;
+}
+
 .btn-discord{
   width:100%;
   color:#fff;

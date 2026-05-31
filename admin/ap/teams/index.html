@@ -1,8 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Teams &bull; DBDCompNet AP</title><link rel="stylesheet" href="../../../styles.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="../../../assets/tablogo.png" /><title>Teams &bull; DBDCompNet AP</title><link rel="stylesheet" href="../../../styles.css"></head>
 <body><div class="page">
-  <header class="site-header"><div class="container nav"><a class="brand" href="../../../"><img class="brand-logo" src="../../../assets/logo.png" alt="DBDCompNet logo"></a><nav class="nav-links nav-desktop"><a href="../users/">Users</a><a href="../organizations/">Organizations</a><a href="../tournaments/">Tournaments</a><a href="../news/">News</a><a href="../support/">Support</a><a href="../access/">Access</a><a href="../../../" class="btn btn-primary nav-cta">Leave AP</a></nav></div></header>
+  <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../../" aria-label="DBDCompNet Home">
+          <img class="brand-logo" src="../../../assets/logo.png" alt="DBDCompNet logo" />
+        </a>
+        <nav class="nav-links nav-desktop" aria-label="Admin Panel">
+          <a href="../users/">Users</a>
+          <a href="../organizations/">Organizations</a>
+          <a href="../tournaments/">Tournaments</a>
+          <a href="../news/">News</a>
+          <a href="../support/">Support</a>
+          <a href="../access/">Access</a>
+          <a href="../../../" class="btn btn-primary nav-cta">Leave AP</a>
+        </nav>
+      </div>
+    </header>
   <main class="site-main"><section class="section"><div class="container narrow"><div class="section-head"><h1 class="section-title" style="margin:0;">Teams</h1><a class="btn btn-secondary" href="../">Back to AP</a></div><p class="muted">Organization intern overview of teams registered on the webpage. Apply to join is removed in AP mode.</p>
   <div class="card-grid">
     <article class="ap-team-card"><h3>Team Name <span class="team-region-badge">NA</span></h3><p class="ap-team-meta">Tournament wins: <strong>XX</strong> &bull; Registered orgs: <strong>XX</strong></p><div class="ap-actions"><a class="btn btn-secondary" href="../../../account/UUID-OF-USER/">View Profile</a><a class="btn btn-primary" href="#team-actions">Actions</a></div></article>
@@ -11,4 +27,40 @@
   <div class="ap-card ap-card--wide" id="team-actions" style="margin-top:24px;"><h2>Actions Menu</h2><p class="muted">For organizations and users with permissions to moderate teams/users.</p><div class="ap-modal-actions"><a class="btn btn-primary" href="#suspend-menu">Suspend</a><button class="btn btn-secondary" type="button">Revoke</button><button class="btn btn-secondary" type="button">Accept</button><button class="btn btn-secondary" type="button">Deny</button></div><ul class="ap-muted-list"><li>Suspend opens another menu for duration and reason.</li><li>Suspension locks account and intern access besides account and appeals.</li><li>Revoke revokes a suspension.</li><li>Accept approves teams into the organization.</li><li>Deny denies teams into the organization.</li></ul></div>
   <div class="ap-card ap-card--wide" id="suspend-menu" style="margin-top:16px;"><h2>Suspend</h2><div class="ap-form-grid"><label class="ap-field"><span>Duration</span><input class="ap-input" placeholder="e.g. 7 days"></label><label class="ap-field"><span>Reason</span><input class="ap-input" placeholder="Reason for suspension"></label></div><button class="btn btn-primary" type="button" style="margin-top:14px;">Confirm Suspension</button></div>
   </div></section></main>
-</div></body></html>
+
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-bar">
+        <div class="footer-left">
+          <div class="footer-title">&copy; DBDCompNet</div>
+          <div class="footer-subcopy">2026 all rights reserved</div>
+
+          <p class="footer-disclaimer">
+            We are not affiliated with Behaviour Interactive or Dead by Daylight.
+          </p>
+
+          <div class="footer-links">
+            <a href="../../../support/legal/terms/">Terms of Service</a>
+            <a href="../../../support/legal/privacy/">Privacy Policy</a>
+            <a href="../../../support/legal/legal-notice/">Legal Notice</a>
+            <a href="../../../support/legal/about/">About</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <a class="social" href="https://x.com/DBDCompNet" target="_blank" rel="noopener" aria-label="X">
+            <img src="../../../assets/x.png" alt="X">
+          </a>
+          <a class="social" href="https://www.youtube.com/@DBDCompNet" target="_blank" rel="noopener" aria-label="YouTube">
+            <img src="../../../assets/youtube.png" alt="YouTube">
+          </a>
+          <a class="social" href="https://discord.gg/aZjGqApf7E" target="_blank" rel="noopener" aria-label="Discord">
+            <img src="../../../assets/discord.png" alt="Discord">
+          </a>
+          <a class="social" href="https://www.twitch.tv/dbdcompnet" target="_blank" rel="noopener" aria-label="Twitch">
+            <img src="../../../assets/twitch.png" alt="Twitch">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div></body></html>

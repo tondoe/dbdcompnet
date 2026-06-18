@@ -126,7 +126,11 @@
 
             <div class="forum-field">
               <label for="forum-body">Text + Media Upload</label>
-              <textarea id="forum-body" name="body" placeholder="Write your post. Media upload will be connected by backend later."></textarea>
+              <div class="format-toolbar" data-target="forum-body" aria-label="Text formatting">
+                <button class="format-button" type="button" data-format="bold" aria-label="Bold selected text">B</button>
+                <button class="format-button format-button--underline" type="button" data-format="underline" aria-label="Underline selected text">U</button>
+              </div>
+              <textarea id="forum-body" name="body" placeholder="Write your post."></textarea>
             </div>
 
             <div class="forum-field">
@@ -176,6 +180,7 @@
       </div>
     </footer>
   </div>
+  <script src="../../editor-formatting.js"></script>
 </body>
 
 </html>

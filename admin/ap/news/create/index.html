@@ -25,7 +25,7 @@
       <form class="ap-card forum-form" action="#" method="get">
         <div class="forum-field"><label>Header (Text-Style: IMPACT)</label><input class="ap-input" value="Community Rule Update"></div>
         <div class="forum-field"><label>Sub-Header (Text-Style: LEXEND)</label><input class="ap-input" value="Small changes to competitive scheduling and registration rules."></div>
-        <div class="forum-field"><label>Normal Text (Text-Style: Trebuchet MS)</label><textarea class="ap-textarea">This is the main body of the announcement. You can replace this with the real content from the DBDCompNet Admin panel later.</textarea></div>
+        <div class="forum-field"><label for="admin-news-body">Normal Text (Text-Style: Trebuchet MS)</label><div class="format-toolbar" data-target="admin-news-body" aria-label="Text formatting"><button class="format-button" type="button" data-format="bold" aria-label="Bold selected text">B</button><button class="format-button format-button--underline" type="button" data-format="underline" aria-label="Underline selected text">U</button></div><textarea class="ap-textarea" id="admin-news-body">Enter the announcement content here.</textarea></div>
         <div class="forum-field"><label>Select Menu Tags</label><select class="ap-select"><option>Tournaments</option><option>General</option><option>Official Statement</option><option>Update!</option><option>Change-Log</option><option>Breaking News!</option><option>Platform</option></select></div>
         <button class="btn btn-primary" type="button">Publish Post</button>
       </form>
@@ -34,7 +34,7 @@
         <div class="ap-editor-body">
           <h2>Community Rule Update</h2>
           <p class="muted"><strong>Small changes to competitive scheduling and registration rules.</strong></p>
-          <p class="muted">This is the main body of the announcement. Content will be generated dynamically when backend is implemented.</p>
+          <p class="muted">The announcement content appears here.</p>
           <h3>Section Heading</h3>
           <ul class="ap-muted-list"><li>Example bullet point</li><li>Another important detail</li><li>More information about the update</li></ul>
           <div class="ap-divider"></div>
@@ -79,4 +79,4 @@
         </div>
       </div>
     </footer>
-  </div></body></html>
+  </div><script src="../../../../editor-formatting.js"></script></body></html>

@@ -108,14 +108,14 @@
               <div class="ap-form-grid" style="margin-top:18px;">
                 <div class="ap-field ap-field--full"><label for="news-header">Header</label><input class="ap-input" id="news-header" type="text" value="Community Rule Update"></div>
                 <div class="ap-field ap-field--full"><label for="news-subheader">Sub-Header</label><input class="ap-input" id="news-subheader" type="text" value="Small changes to competitive scheduling and registration rules."></div>
-                <div class="ap-field ap-field--full"><label for="news-body">Normal Text</label><textarea class="ap-textarea" id="news-body">This is the main body of the announcement. You can replace this with the real content from the admin panel later. For now, this static page shows the expected structure, spacing, and typography for Jamie's requested frontend.</textarea></div>
+                <div class="ap-field ap-field--full"><label for="news-body">Normal Text</label><div class="format-toolbar" data-target="news-body" aria-label="Text formatting"><button class="format-button" type="button" data-format="bold" aria-label="Bold selected text">B</button><button class="format-button format-button--underline" type="button" data-format="underline" aria-label="Underline selected text">U</button></div><textarea class="ap-textarea" id="news-body">Enter the announcement content here.</textarea></div>
                 <div class="ap-field ap-field--full"><label for="news-bullets">Bullet Points</label><textarea class="ap-textarea" id="news-bullets">Example bullet point
 Another important detail
 More information about the update</textarea></div>
               </div>
 
-              <div class="ap-note" style="margin-top:18px;">Post action should ask for confirmation before publishing. Images can be added later when the backend uploader is ready.</div>
-              <div class="ap-actions" style="margin-top:18px;"><a class="btn btn-primary" href="./../post/">Preview Post</a><a class="btn btn-secondary" href="#">Post (2x confirm later)</a></div>
+              <div class="ap-note" style="margin-top:18px;">Review the post before publishing. Publishing requires confirmation.</div>
+              <div class="ap-actions" style="margin-top:18px;"><a class="btn btn-primary" href="./../post/">Preview Post</a><a class="btn btn-secondary" href="#">Publish Post</a></div>
             </div>
 
             <div class="ap-editor-preview">
@@ -123,7 +123,7 @@ More information about the update</textarea></div>
               <div class="ap-editor-body">
                 <h2 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing:0.02em;">Community Rule Update</h2>
                 <p style="font-family:'Lexend', sans-serif; color:#fff; font-weight:700;">Small changes to competitive scheduling and registration rules.</p>
-                <p>This is the main body of the announcement. You can replace this with the real content from the DBD Comp Union admin panel later. For now, this acts as a visual and structural placeholder.</p>
+                <p>The announcement content appears here in the published layout.</p>
                 <h3>Section Heading</h3>
                 <ul><li>Example bullet point</li><li>Another important detail</li><li>More information about the update</li></ul>
                 <div class="ap-divider"></div>
@@ -170,5 +170,6 @@ More information about the update</textarea></div>
       </div>
     </footer>
   </div>
+  <script src="../../../editor-formatting.js"></script>
 </body>
 </html>

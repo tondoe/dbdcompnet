@@ -2430,6 +2430,25 @@ h4,
   color: var(--text);
 }
 
+.legal-directory{
+  padding:16px;
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:12px;
+  background:rgba(255,255,255,0.025);
+}
+
+.legal-emphasis{
+  padding:16px;
+  border-left:3px solid var(--red);
+  background:rgba(225,29,46,0.08);
+}
+
+.legal-list-block{
+  padding-left:14px;
+  border-left:2px solid rgba(255,255,255,0.12);
+  line-height:1.9;
+}
+
 .legal-card a{
   color: #fff;
   text-decoration: underline;
